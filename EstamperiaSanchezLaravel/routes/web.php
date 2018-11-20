@@ -13,8 +13,9 @@
 
 Route::get('/home','MainController@index' );
 
-Route::get('/loguearUsuario', 'formularioController@loguearUsuario');
-
-Route::get('/registrarUsuario', 'formularioController@registrarUsuario');
+Route::prefix('/usuario')->name('usuario')->group(function () {
+    Route::get('/registrar', 'formularioController@registrarUsuario')->name('registro');
+    Route::get('/loguear', 'formularioController@loguearUsuario')->name('logueo');
+});
 
 Route::get('/actualizarDatosPersonales', 'formularioController@actualizarDatosUsuario');
