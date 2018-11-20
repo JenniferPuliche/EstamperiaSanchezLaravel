@@ -1,3 +1,14 @@
+Para colaborar hacer:
+
+- Hacer 'git clone https://github.com/leatamola/EstamperiaSanchezLaravel.git'
+- Abrir la carpeta en algún visualizador y copiar el archivo .env.example como .env
+- Hacer 'composer install', luego 'php artisan key:generate' y finalmente crear el servidor 'php artisan serve'
+ 
+
+
+
+
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
