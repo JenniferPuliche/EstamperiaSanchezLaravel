@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/home','MainController@index' );
+
+Route::get('/loguearUsuario', 'formularioController@loguearUsuario');
+
+Route::get('/registrarUsuario', 'formularioController@registrarUsuario');
+
+Route::get('/actualizarDatosPersonales', 'formularioController@actualizarDatosUsuario');

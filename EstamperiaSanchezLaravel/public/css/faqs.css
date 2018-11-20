@@ -1,0 +1,209 @@
+
+nav{
+	list-style: none;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	/*text-transform: uppercase;*/
+	text-shadow: none;
+}
+.btn-query{
+	font-family: 'Roboto', sans-serif;
+	background-color: white;
+	/* font-weight: bold; */
+	border-bottom: 2px, solid, black;
+  cursor: pointer;
+  border-radius: 0px;
+}
+.btn-query span{
+	font-weight: 600;
+}
+
+.btn-query:hover{
+	background-color: rgb(232, 46, 46);
+	color: white;
+	transition: 0.5s;
+}
+.btn-query:active{
+	color: rgb(199, 0, 0);
+}
+
+div .answers {
+	font-family: 'Roboto',sans-serif;
+}
+
+div .answers span{
+	font-weight: 600;
+}
+
+div .answers h5 {
+	color: rgb(232, 46, 46);
+}
+
+th {
+	color: rgb(232, 46, 46);
+	font-weight: 600;
+}
+
+td span{
+	color: rgb(199,0,0);
+	font-weight: 600;
+}
+
+h3{
+	font-family: 'Roboto',sans-serif;
+}
+.titulo{
+	font-weight: 300;
+	text-align: center;
+	letter-spacing: -0.05em;
+	color: rgb(199,0,0);
+}
+.titulo span{
+	font-weight: 600;
+}
+
+/* CSS producto */
+
+.formCompra{
+
+	align-content: center;
+	margin-left: 2em;
+}
+
+.elDelTalle span{
+	display: inline;
+	flex: initial;
+	cursor: pointer;
+	font-weight: 600;
+	font-family: 'Roboto',sans-serif;
+
+}
+
+.elDelTalle input {
+	display: none;
+	cursor: pointer;
+
+}
+.elDelColor input {
+	display: none;
+	cursor: pointer;
+
+}
+
+.Talle{
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-left: : 5px;
+	margin-right: 5px;
+	margin-top: 15px;
+	border: 2px solid rgba(232, 46, 46, 0.5);
+	color: rgba(232, 46, 46, 0.5);
+}
+.Bordo{
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-left: : 5px;
+	margin-right: 5px;
+	margin-top: 15px;
+	border: 2px solid rgba(232, 46, 46, 0.5);
+	color: rgba(232, 46, 46, 0.5);
+}
+.AzulM{
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-left: : 5px;
+	margin-right: 5px;
+	margin-top: 15px;
+	border: 2px solid rgba(39, 46, 93, 0.5);
+	color: rgba(39, 46, 93, 0.5);
+}
+.Blanco{
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-left: : 5px;
+	margin-right: 5px;
+	margin-top: 15px;
+	border: 2px solid rgba(124, 124, 124, 0.5);
+	color: rgba(124, 124, 124, 0.5);
+}
+
+.elDelTalle:hover input ~ .Talle {
+    background-color: rgba(232, 46, 46, 0.5);
+		color: rgb(255, 255, 255);
+}
+.elDelColor:hover input ~ .Bordo {
+    background-color: rgba(232, 46, 46, 0.5);
+		color: rgb(255, 255, 255);
+}
+.elDelColor:hover input ~ .AzulM {
+    background-color: rgba(39, 46, 93, 0.5);
+		color: rgb(255, 255, 255);
+}
+.elDelColor:hover input ~ .Blanco {
+    background-color: rgba(124, 124, 124, 0.5);
+		color: rgb(255, 255, 255);
+}
+
+.elDelTalle input:checked ~ .Talle {
+    background-color: rgb(232, 46, 46);
+		color: rgb(255, 255, 255);
+
+}
+.elDelColor input:checked ~ .Bordo {
+    background-color: rgb(232, 46, 46);
+		color: rgb(255, 255, 255);
+
+}
+.elDelColor input:checked ~ .AzulM {
+    background-color: rgb(39, 46, 93);
+		color: rgb(255, 255, 255);
+
+}
+.elDelColor input:checked ~ .Blanco {
+    background-color: rgb(245, 245, 245);
+		color: rgb(10, 10, 10);
+		border: 2px solid rgb(10, 10, 10);
+
+}
+
+.elDelColor span{
+	display: inline;
+	flex: initial;
+	cursor: pointer;
+	font-weight: 600;
+	font-family: 'Roboto',sans-serif;
+}
+
+.btnCompra{
+	cursor: pointer;
+	width: 100%;
+	font-family: 'Roboto', sans-serif;
+	color: rgba(103, 224, 22, 0.7);
+	background-color: rgba(103, 224, 22, 0);
+	padding-top: 0.7em;
+	border: 2px solid rgba(103, 224, 22, 0.5);
+
+}
+.btnCompra:hover{
+	background-color: rgba(103, 224, 22, 0.8);
+	color: white;
+.}
+
+div .info{
+	font-family: 'Roboto',sans-serif;
+	border-top: 1px solid rgb(206, 206, 206);
+	border-bottom: 1px solid rgb(206, 206, 206);
+}
+div .Precio{
+	text-align: right;
+	font-family: 'Roboto',sans-serif;
+	font-weight: 200;
+	color: rgb(103, 224, 22);
+}
+div .Precio h6{
+	text-align: right;
+	font-family: 'Roboto',sans-serif;
+	font-weight: 200;
+	color: rgb(124, 124, 124);
+	font-style: italic;
+}

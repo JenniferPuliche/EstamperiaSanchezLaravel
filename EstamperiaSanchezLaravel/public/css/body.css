@@ -1,0 +1,74 @@
+body hr{
+  color: black;
+  width: 70px;
+  text-align: center;
+  size: 30%;
+}
+
+
+
+.categorias{
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+
+}
+
+#hamburguer{
+ margin-left: auto;
+}
+
+
+
+h6{
+  position: absolute;
+  width: 100%;
+  color: red;
+  font-size: 40px;
+  text-align: center;
+  top: 200px;
+  margin: 0 auto;
+}
+
+.categ{
+  position: relative;
+}
+
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+h4{
+  position: absolute;
+  text-align: center;
+  font-size: 22px;
+  margin-top:50px;
+  margin-left: 90px;
+}
+
+
+#galeria{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.categorias{
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+#galeria img{
+  width: 300px;
+  margin: 6px;
+  opacity: 1;
+  transition: 300ms
+}
+
+#galeria > div img:hover{
+  opacity: 0.8;
+}

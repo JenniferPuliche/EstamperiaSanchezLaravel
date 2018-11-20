@@ -1,0 +1,91 @@
+footer{
+  text-align: center;
+  background-color: #f8f9fa !important;
+
+}
+
+.h2_footer{
+  text-align: center;
+  font-size: 14px;
+}
+
+footer h3 {
+  text-align: center;
+  font-size: 14px;
+}
+
+
+footer h4{
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+
+footer h5{
+  text-align: center;
+}
+
+footer h6{
+  text-align: left;
+}
+footer h7{
+  text-align: left;
+  font-size: 13px;
+}
+
+footer i{
+  font-size: 25px;
+  margin: 0px 9px;
+}
+
+#footer1{
+  margin-bottom: 10px;
+}
+#footer2{
+  background-color: #c0c2c3;
+  width: 100%;
+}
+
+.tarjetas{
+  text-align: center;
+  width: 45px;
+  margin: 10px 5px;
+}
+
+#grupoTarjetas{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.seguinos{
+  padding-top: 2px;
+}
+
+
+#facebookIcon{
+  color: #29487D;
+  transition: 150ms;
+}
+#facebookIcon:hover{
+  color: black;
+}
+
+
+#instagramIcon{
+  color: #DD2A7B;
+  transition: 150ms;
+}
+#instagramIcon:hover{
+  color: black;
+}
+
+#youtubeIcon{
+  color: red;
+  transition: 150ms;
+}
+#youtubeIcon:hover{
+  color: black;
+}
+
+.hrFooter{
+  width: 100%;
+}
