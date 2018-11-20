@@ -8,8 +8,6 @@
 @include('includes.header')
 @endsection
 
-
-
 @section('main')
 <div>
   <div class="container">
