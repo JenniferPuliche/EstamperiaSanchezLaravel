@@ -9,7 +9,7 @@
 @endsection
 
 @section('main')
-<section class="registro container">
+<section  class="registro container">
     <div class="container">
       <div class="row centrar-contenido">
         <div class="form-title col-12 col-lg 6">

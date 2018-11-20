@@ -12,6 +12,7 @@
 */
 
 Route::get('/home','MainController@index' );
+Route::get('/','MainController@index' );
 
 Route::get('/loguearUsuario', 'formularioController@loguearUsuario');
 

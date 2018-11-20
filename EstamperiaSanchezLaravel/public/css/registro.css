@@ -11,6 +11,9 @@ section{
 .registro h3{
   color: #767676;
 }
+h1{
+  text-align: center;
+}
 
 .registro h2{
   padding-bottom: 0px;

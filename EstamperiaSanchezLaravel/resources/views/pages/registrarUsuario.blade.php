@@ -21,8 +21,8 @@
   <div class="container">
     <div class="row centrar-contenido">
       <div class="form-title col-12 col-lg 6">
-        <h2> REGISTRARSE </h1>
-        <h3> Tus mejores estampas, a un click </h2>
+        <h2> REGISTRARSE </h2>
+        <h2> Tus mejores estampas, a un click </h2>
       </div>
     </div>
   </div>
@@ -79,7 +79,7 @@
 
 
           <div class="col-12 centrar-contenido">
-            <button class="nice-bottom"type="submit">Registrarse</button>
+            <button class="nice-bottom" type="submit">Registrarse</button>
           </div>
         </form>
       </div>
