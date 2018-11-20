@@ -25,3 +25,7 @@ Route::get('/faqs', 'FaqsController@index');
 Route::get('/loguearUsuario', 'LogueoController@index');
 
 Route::get('/registrarUsuario', 'RegistroController@index');
+
+Route::get('/remeras', 'RemerasController@index');
+
+Route::get('/producto', 'ProductController@index');

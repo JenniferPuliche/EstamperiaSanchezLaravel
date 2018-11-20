@@ -1,4 +1,4 @@
-/* input{
+input{
   text-align: center;
   color: rgb(199,0,0);
   padding: 10px;
@@ -9,7 +9,7 @@
 
 input:hover{
   border: 2px solid rgb(199,0,0);
-} */
+}
 
 h3{
   text-align: center;
@@ -46,7 +46,7 @@ h3{
 
 
 
- .nombreRemera{
+h5{
  	text-align: center;
     margin: 10px 0;
     position: absolute;
@@ -59,16 +59,16 @@ h3{
     font-size: 18px;
 }
 
-/* .botones{
+.botones{
 	margin-top: 100px;
-} */
+}
 
 @media (max-width: 768px){
 	.remera{
 		width: 50%;
 		margin: 2px auto;
 	}
-/*
+/* 
 	h5{
 		top: 150px;
 	}
