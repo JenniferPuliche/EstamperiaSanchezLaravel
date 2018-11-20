@@ -85,6 +85,9 @@
       </div>
     </div>
   </div>
+</section>
+  @endsection
 
-@section('script')
-<script src="js/app.js"></script>
+  @section('footer')
+  	@include('includes.footer')
+  @endsection

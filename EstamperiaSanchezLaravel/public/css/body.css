@@ -1,3 +1,7 @@
+body{
+  padding-top: 100px;
+}
+
 body hr{
   color: black;
   width: 70px;
@@ -5,20 +9,20 @@ body hr{
   size: 30%;
 }
 
-
-
-.categorias{
+/* .categorias{
   margin-top: 20px;
   margin-bottom: 20px;
-
-
-}
+} */
 
 #hamburguer{
  margin-left: auto;
 }
-
-
+h3{
+  text-align: center;
+}
+h2{
+  text-align: center;
+}
 
 h6{
   position: absolute;
@@ -40,13 +44,13 @@ a{
   color: black;
 }
 
-h4{
+/* h4{
   position: absolute;
   text-align: center;
   font-size: 22px;
   margin-top:50px;
   margin-left: 90px;
-}
+} */
 
 
 #galeria{

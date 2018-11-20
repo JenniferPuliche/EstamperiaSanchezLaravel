@@ -46,19 +46,19 @@
 	<div id="galeria">
 		<div class="categ">
 			<a href="remeras.php">
-				<h4>REMERAS</h4>
+				<!-- <h4>REMERAS</h4> -->
 				<img src="imagenes/Categorias/hombre/cate3.png" alt="calse remera 1">
 			</a>
 		</div>
 		<div>
 			<a href="">
-				<h4>CAMPERAS</h4>
+				<!-- <h4>CAMPERAS</h4> -->
 				<img src="imagenes/Categorias/hombre/cate3.png" alt="calse remera 2">
 			</a>
 		</div>
 		<div>
 			<a href="">
-				<h4>PANTALONES</h4>
+				<!-- <h4>PANTALONES</h4> -->
 				<img src="imagenes/Categorias/hombre/cate3.png" alt="calse remera 3">
 			</a>
 		</div>

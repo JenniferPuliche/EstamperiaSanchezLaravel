@@ -72,8 +72,8 @@ ul, ol, li {
 
 header{
     margin: 0 auto;
+		/* margin-bottom: 60px; */
     width: 100%;
-
     background: #000 linear-gradient(to bottom, #eceff1 0%, #eceff1 100%) repeat scroll 0 0;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
 
