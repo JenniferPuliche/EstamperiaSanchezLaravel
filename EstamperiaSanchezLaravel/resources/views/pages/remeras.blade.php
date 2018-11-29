@@ -13,8 +13,11 @@
 
 <div class="botones">
 	<h3>Remeras</h3>
-	<input type="button" name="hombre" value="Hombre" >
-	<input type="button" name="mujer" value="Mujer" onclick="mostrar()">
+</div>
+
+	<div class="dorm-goup justify-content-center" style="display:flex">
+	<input class="btn btn-light" type="button" name="hombre" value="Hombre" >
+	<input class="btn btn-light" type="button" name="mujer" value="Mujer" onclick="mostrar()">
 </div>
 
 <section>

@@ -29,7 +29,7 @@
   </div>
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-md-8">
+      <div class="col-md-6">
         <form method="post" class="contact-form">
           <div class="form-group">
             <label for="fullName">Nombre completo:</label>
@@ -58,29 +58,27 @@
           </div>
           <div class="form-group">
           <label class="etiqueta col-12 offset-md-1 col-md-2 col-lg-2">Género:</label>
-            <label class="col-6 col-md-4"><input type="radio" name="userGender" value="m"
+            <label class="col-6 col-md-4" style="display:inline"><input type="radio" name="userGender" value="m"
               <?php
               if(!isset($_POST['userGender'])){
                 echo '';
               }else if ($_POST['userGender']==='m') {
                   echo 'checked';}?> > Masculino</label>
-            <label  class="col-6 col-md-4"><input type="radio" name="userGender" value="f"
+            <label  class="col-6 col-md-4" style="display:inline"><input type="radio" name="userGender" value="f"
               <?php
               if(!isset($_POST['userGender'])){
                 echo '';
               }else if ($_POST['userGender']==='f') {
                   echo 'checked';}?> > Femenino</label><label class="none col-0 col-md-1"></label>
             </div>
-
-            <label for="">
-              Avatar:
-              <input type="file" name="foto" value="">
-
-            </label>
+              <label for="">
+                Avatar:
+                <input style="width:20vh" type="file" name="foto" value="">
+              </label>
 
 
-          <div class="col-12 centrar-contenido">
-            <button class="nice-bottom" type="submit">Registrarse</button>
+          <div class="dorm-goup justify-content-center" style="display:flex">
+            <button class="btn btn-light" type="submit">Registrarse</button>
           </div>
         </form>
       </div>
