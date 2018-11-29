@@ -13,8 +13,10 @@
     <div class="container">
       <div class="row centrar-contenido">
         <div class="form-title col-12 col-lg 6">
-          <h2> INGRESAR </h1>
-          <h3> Más que una estampa, tu estilo</h2>
+          <div class="titulo">
+            <h3><span>INGRESAR</span></h3>
+          </div>
+          <h4> Más que una estampa, tu estilo</h4>
         </div>
       </div>
 

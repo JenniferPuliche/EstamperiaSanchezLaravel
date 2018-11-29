@@ -52,6 +52,10 @@ td span{
 h3{
 	font-family: 'Roboto',sans-serif;
 }
+Header, h4{
+	font-family: 'Roboto',sans-serif;
+	text-align: center;
+}
 .titulo{
 	font-weight: 300;
 	text-align: center;

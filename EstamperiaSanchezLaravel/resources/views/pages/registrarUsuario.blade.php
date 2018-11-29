@@ -20,8 +20,10 @@
   <div class="container">
     <div class="row centrar-contenido">
       <div class="form-title col-12 col-lg 6">
-        <h2> REGISTRARSE </h2>
-        <h2> Tus mejores estampas, a un click </h2>
+        <div class="titulo">
+          <h3><span>REGISTRATE</span></h3>
+        </div>
+        <h4> Tus mejores estampas, a un click </h4>
       </div>
     </div>
   </div>

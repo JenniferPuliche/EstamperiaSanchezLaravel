@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
 @section('title')
-<title>Home</title>
+<title>Remeras</title>
 @endsection
 	<link rel="stylesheet" type="text/css" href="css/remeras.css">
 

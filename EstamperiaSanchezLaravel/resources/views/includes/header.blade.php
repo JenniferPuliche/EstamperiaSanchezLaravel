@@ -12,7 +12,7 @@
             <li class="navbar-brand dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">PRODUCTOS</a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="remeras.php">Remeras</a>
+                <a class="dropdown-item" href="remeras">Remeras</a>
                 <a class="dropdown-item" href="producto.php">Camperas</a>
                 <a class="dropdown-item" href="producto.php">Pantalones</a>
             </div>

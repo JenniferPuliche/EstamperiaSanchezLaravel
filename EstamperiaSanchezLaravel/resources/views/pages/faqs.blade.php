@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
 @section('title')
-<title>faqs</title>
+<title>Faqs</title>
 @endsection
 
 @section('header')
