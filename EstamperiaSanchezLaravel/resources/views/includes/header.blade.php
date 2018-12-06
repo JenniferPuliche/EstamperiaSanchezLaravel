@@ -19,10 +19,10 @@
           </li>
 
               <li class="navbar-brand">
-                <a class="nav-link" href="loguearUsuario">INGRESA</a>
+                <a class="nav-link" href="login">INGRESA</a>
               </li>
               <li class="navbar-brand">
-                  <a class="nav-link" href="registrarUsuario">REGISTRATE</a>
+                  <a class="nav-link" href="register">REGISTRATE</a>
               </li>
       </ul>
         <form class="form-inline my-2 my-lg-0 mr-auto ml-auto">
