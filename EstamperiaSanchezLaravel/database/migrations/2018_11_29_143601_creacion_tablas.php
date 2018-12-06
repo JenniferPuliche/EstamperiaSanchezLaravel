@@ -14,11 +14,12 @@ class CreacionTablas extends Migration
     public function up()
     {
       Schema::create('products', function (Blueprint $table) {
-          $table->increments('id');
-          $table->string('');
-          $table->string('email')->unique();
-          $table->timestamp('email_verified_at')->nullable();
-          $table->string('password');
+          $table->increments('id')->unique();
+          $table->string('name', 180);
+          $table->integer('wholesale_price')->nullable();
+          $table->integer('retail_price')->nullable();
+          $table->string('image', 500);
+          $table->string('color', 255);
           $table->rememberToken();
           $table->timestamps();
       });
@@ -31,6 +32,6 @@ class CreacionTablas extends Migration
      */
      public function down()
      {
-         Schema::dropIfExists('users');
+         Schema::dropIfExists('products');
      }
  }
