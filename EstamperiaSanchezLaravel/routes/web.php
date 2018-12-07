@@ -15,19 +15,10 @@ Route::get('/welcome', function () {
 });
 
 Route::get('/home','MainController@index' );
+
 Route::get('/','MainController@index' );
 
-Route::get('/loguearUsuario', 'formularioController@loguearUsuario');
-
-Route::get('/registrarUsuario', 'formularioController@registrarUsuario');
-
-Route::get('/actualizarDatosPersonales', 'formularioController@actualizarDatosUsuario');
-
 Route::get('/faqs', 'FaqsController@index');
-
-Route::get('/loguearUsuario', 'LogueoController@index');
-
-Route::get('/registrarUsuario', 'RegistroController@index');
 
 Route::get('/remeras', 'RemerasController@index');
 
