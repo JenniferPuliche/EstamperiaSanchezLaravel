@@ -13,6 +13,16 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
+        Schema::create('directions', function(Blueprint $table){
+            $table->increments('id');
+            $table->string('street', 200);
+            $table->unsigninteger('number');
+            $table->string('city');
+            $table->string('zipcode', 100);
+            $table->rememberToken();
+            $table->timestamps();                        
+        });
+
         Schema::create('users', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
