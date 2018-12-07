@@ -33,7 +33,7 @@
         <form method="post" class="contact-form">
           <div class="form-group">
             <label for="fullName">Nombre completo:</label>
-            <input type="text" name="userName" id="fullName" class="form-control" value=<?php echo $_POST['userName']??'';?>>
+            <input type="text" name="name" id="fullName" class="form-control" value=<?php echo $_POST['name']??'';?>>
             <div class="invalid-feedback"></div>
           </div>
           <div class="form-group">
@@ -85,6 +85,7 @@
     </div>
   </div>
 </section>
+<script src="js/registerValidate.js"></script>
   @endsection
 
   @section('footer')
