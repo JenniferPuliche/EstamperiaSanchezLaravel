@@ -38,7 +38,7 @@ footer h7{
 
 footer i{
   font-size: 25px;
-  /* margin: 0px 9px; */
+  margin: 0px 9px;
   opacity: 0.8;
 }
 
@@ -67,11 +67,11 @@ footer i{
 
 
 #facebookIcon{
-  color: #29487D;
+  color: black;
   transition: 150ms;
 }
 #facebookIcon:hover{
-  color: black;
+  color: #29487D;
 }
 
 

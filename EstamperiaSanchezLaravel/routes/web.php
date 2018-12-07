@@ -24,6 +24,7 @@ Route::get('/welcome', function () {
     return view('welcome');
 });
 Route::get('/','HomeController@index')->name('home');
+Route::get('/home','HomeController@index')->name('home');
 
 Route::get('/faqs', 'FaqsController@index');
 
@@ -32,4 +33,3 @@ Route::get('/remeras', 'RemerasController@index');
 Route::get('/producto', 'ProductController@index');
 
 Auth::routes();
-

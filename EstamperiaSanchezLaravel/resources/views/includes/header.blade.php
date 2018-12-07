@@ -18,18 +18,30 @@
             </div>
           </li>
 
+            @if (Route::has('login'))
+                @auth
+              <li class="navbar-brand">
+                <a class="nav-link" href="home">MI CUENTA</a>
+              </li>
+              @else
               <li class="navbar-brand">
                 <a class="nav-link" href="login">INGRESA</a>
               </li>
+              @if (Route::has('register'))
               <li class="navbar-brand">
                   <a class="nav-link" href="register">REGISTRATE</a>
               </li>
+              @endif
+          @endauth
+        @endif
+
       </ul>
+      <div class="">
         <form class="form-inline my-2 my-lg-0 mr-auto ml-auto">
           <input class="form-control mr-sm-2" type="Buscar" placeholder="Buscar..." aria-label="Buscar">
           <button class="btn btn-danger mr-auto ml-auto" type="submit">Buscar</button>
         </form>
-
+      </div>
       </div>
       <br><br>
   </nav>
