@@ -15,8 +15,8 @@ class ProductController extends Controller
     public function index()
     {
         /* Clase alta baja */
-        $products = Product:all(); // traigo todos los productos
-        $categories = Category:all(); // traigo las categorías (M-V-JUV)
+        $products = Product::all(); // traigo todos los productos
+        $categories = Category::all(); // traigo las categorías (M-V-JUV)
 
         return view ('pages.producto', compact(['product', 'categories']));
     }

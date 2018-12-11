@@ -18,7 +18,7 @@
             </div>
           </li>
 
-            @if (Route::has('login'))
+            <!-- @if (Route::has('login'))
                 @auth
               <li class="navbar-brand">
                 <a class="nav-link" href="home">MI CUENTA</a>
@@ -33,7 +33,40 @@
               </li>
               @endif
           @endauth
-        @endif
+        @endif -->
+
+
+
+        @guest
+            <li class="navbar-brand">
+                <a class="nav-link" style="font-size:20px" href="{{ route('login') }}">INGRESA</a>
+            </li>
+            <li class="navbar-brand">
+                @if (Route::has('register'))
+                    <a class="nav-link" style="font-size:20px" href="{{ route('register') }}">REGISTRATE</a>
+                @endif
+            </li>
+        @else
+            <li class="navbar-brand dropdown">
+                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                    {{ Auth::user()->name }} <span class="caret"></span>
+                </a>
+
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" style="font-size:15px" href="{{ route('logout') }}"
+                       onclick="event.preventDefault();
+                                     document.getElementById('logout-form').submit();">
+                        SALIR
+                    </a>
+
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        @csrf
+                    </form>
+                </div>
+            </li>
+        @endguest
+
+
 
       </ul>
       <div class="">
