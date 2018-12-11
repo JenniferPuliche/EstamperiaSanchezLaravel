@@ -100,6 +100,7 @@ a{
   opacity: 0.8;
 }
 
+<<<<<<< HEAD
 #facebookIcon{
   color: black;
   transition: 150ms;
@@ -110,4 +111,9 @@ a{
 
 .fa-shopping-cart{
   margin-top: 12px;
+=======
+
+.pass{
+  color: black;
+>>>>>>> 1f6e4bddd48d0474964ae88ed3af65212954c45b
 }

@@ -16,11 +16,11 @@ class CreateUsersTable extends Migration
         Schema::create('directions', function(Blueprint $table){
             $table->increments('id');
             $table->string('street', 200);
-            $table->unsigninteger('number');
+            $table->unsignedInteger('number');
             $table->string('city');
             $table->string('zipcode', 100);
             $table->rememberToken();
-            $table->timestamps();                        
+            $table->timestamps();
         });
 
         Schema::create('users', function (Blueprint $table) {
@@ -32,6 +32,7 @@ class CreateUsersTable extends Migration
             $table->rememberToken();
             $table->timestamps();
         });
+
     }
 
     /**
@@ -41,6 +42,7 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+      Schema::dropIfExists('users');
+      Schema::dropIfExists('directions');
     }
 }

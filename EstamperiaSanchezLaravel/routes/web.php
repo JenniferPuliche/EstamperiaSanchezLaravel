@@ -23,6 +23,7 @@ Route::prefix('/product')->group(function(){
 Route::get('/welcome', function () {
     return view('welcome');
 });
+
 Route::get('/','HomeController@index')->name('home');
 Route::get('/home','HomeController@index')->name('homeLog');
 

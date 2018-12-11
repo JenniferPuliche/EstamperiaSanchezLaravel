@@ -16,11 +16,11 @@ class CreacionTablas extends Migration
       Schema::create('products', function (Blueprint $table) {
           $table->increments('id')->unique();
           $table->string('name', 180);
-          $table->string('category', 255);
+          $table->string('category', 255)->nullable();
           $table->integer('wholesale_price')->nullable();
           $table->integer('retail_price')->nullable();
-          $table->string('image', 500);
-          $table->string('color', 255);
+          $table->string('image', 500)->nullable();
+          $table->string('color', 255)->nullable();
           $table->rememberToken();
           $table->timestamps();
       });

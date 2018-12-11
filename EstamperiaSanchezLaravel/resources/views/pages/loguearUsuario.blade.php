@@ -32,7 +32,7 @@
             ?>
 
             <div class="form-group">
-            <label for="email">Email:</label>
+            <label for="email">hola:</label>
             <input class="form-control" type="text" name="userMail" placeholder="Ingrese su correo electrónico"  value=<?php echo $_POST['userMail']??'';?>>
             <?php
             // echo $validaLogueo->getErrorEmail();
@@ -42,7 +42,7 @@
             <!-- <br><br> -->
 
             <div class="form-group">
-            <label  for=""> Contraseña:</label>
+            <label  for=""> tutia:</label>
             <input class="form-control" type="password" name="userPass" maxlength="20" placeholder="Ingrese su contraseña" value=<?php echo $_POST['userPass']??'';?> >
             </div>
 

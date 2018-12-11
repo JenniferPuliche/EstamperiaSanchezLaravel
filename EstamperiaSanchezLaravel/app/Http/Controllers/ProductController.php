@@ -28,7 +28,8 @@ class ProductController extends Controller
      */
     public function create()
     {
-        //
+        //$categories = Category::all();
+        return view('auth.product');//->with('categories', $categories);
     }
 
     /**
@@ -52,35 +53,33 @@ class ProductController extends Controller
         $table->string('color', 255);
         */
         ]);
+
+        //dd($request->all());
         //consulto si hay imagen y la guardo
-        if($request->file('img')){
-            $path = $request->file('img')->storePublicly('products');
+        if($request->file('image')){
+            $path = $request->file('image')->storePublicly('products');
         }
         // Creo el objeto proudcto y lo guardo en la DB
 
         //@TODO
-        $product = Ṕroduct::create(){[
+        $product = Product::create([
             'name' => $request->input('name'),
-            'price' => $request->input('price')??0,
-            'description' => $request->input('description'),
+            'wholesale_price' => $request->input('price')??0,
+            'retail_price' => $request->input('price')??0,
             'image' => $path??null,
-            'stock' => $request->input('stock')??0,
-            'user_id' => \Auth::user()->id,
-        ]
-
-        }
-
+        ]);
         // Relaciono el ID con la categoria ID
         //OPCIÓN ATTACH (de uno a uno)
-        foreach ($request->input('categories') as $category) {
-            # por cada categoría guardo la relación
-
-        }
+        /*foreach ($request->input('categories') as $category) {
+            $product->categories()->attach($category);
+        } */
 
         //OPCION ARRAY (de a muchos, sincroniza de a muchos)
         # @TODO
 
-        return redirect('/product');
+        //$product->save();
+
+        return redirect('/product/create');
     }
 
     /**
@@ -91,7 +90,7 @@ class ProductController extends Controller
      */
     public function show(Product $product)
     {
-        
+
     }
 
     /**
