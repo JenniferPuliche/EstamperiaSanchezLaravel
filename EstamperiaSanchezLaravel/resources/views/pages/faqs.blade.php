@@ -18,7 +18,7 @@
 
 
     <p>
-      <button type="button" class="btn btn-query btn-lg btn-block"data-toggle="collapse" href="#Talles" role="button" aria-expanded="false" aria-controls="collapseExample">
+      <button type="button" class="btn btn-query btn-lg btn-block faqsbutton" data-toggle="collapse" href="#Talles" role="button" aria-expanded="false" aria-controls="collapseExample">
         Nuestros <span>TALLES</span>
       </button>
       <div class="answers collapse" id="Talles" >
@@ -178,7 +178,7 @@
 
 
     <p>
-      <button type="button" class="btn btn-query btn-lg btn-block"data-toggle="collapse" href="#Calidad" role="button" aria-expanded="false" aria-controls="collapseExample">
+      <button type="button" class="btn btn-query btn-lg btn-block faqsbutton" data-toggle="collapse" href="#Calidad" role="button" aria-expanded="false" aria-controls="collapseExample">
           <span>CALIDAD</span>
       </button>
       <div class="answers collapse" id="Calidad" >
@@ -192,7 +192,7 @@
       </p>
 
       <p>
-        <button type="button" class="btn btn-query btn-lg btn-block"data-toggle="collapse" href="#Envios" role="button" aria-expanded="false" aria-controls="collapseExample">
+        <button type="button" class="btn btn-query btn-lg btn-block faqsbutton" data-toggle="collapse" href="#Envios" role="button" aria-expanded="false" aria-controls="collapseExample">
           Hacemos <span>ENVIOS</span>
         </button>
         <div class="answers collapse" id="Envios" >
@@ -204,7 +204,7 @@
       </p>
 
       <p>
-        <button type="button" class="btn btn-query btn-lg btn-block"data-toggle="collapse" href="#collapseFive" role="button" aria-expanded="false" aria-controls="collapseExample">
+        <button type="button" class="btn btn-query btn-lg btn-block faqsbutton" data-toggle="collapse" href="#collapseFive" role="button" aria-expanded="false" aria-controls="collapseExample">
           Facilidades de <span>PAGO</span>
         </button>
         <div class="answers collapse" id="collapseFive" >

@@ -8,7 +8,7 @@ nav{
 }
 .btn-query{
 	font-family: 'Roboto', sans-serif;
-	background-color: white;
+	/* background-color: white; */
 	/* font-weight: bold; */
 	border-bottom: 2px, solid, black;
   cursor: pointer;

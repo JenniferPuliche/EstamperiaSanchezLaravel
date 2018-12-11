@@ -10,6 +10,40 @@ li a{
 li a:hover{
   color: red;
 }
+
+.btn-query{
+  background-color: #232323;
+  color: white;
+}
+.answers{
+  color:white;
+}
+
+.dropdown-menu{
+	background-color:black;
+}
+
+.dropdown-item{
+  background-color: black;
+  color: white;
+}
+.dropdown-item:hover{
+  background-color: #232323;
+  color: white;
+}
+
+#email{
+  background-color: rgb(206, 212, 218);
+}
+#name{
+  background-color: rgb(206, 212, 218);
+}
+#password{
+  background-color: rgb(206, 212, 218);
+}
+#password{
+  background-color: rgb(206, 212, 218);
+}
 .fixed-top {
   position: fixed;
   top: 0;
