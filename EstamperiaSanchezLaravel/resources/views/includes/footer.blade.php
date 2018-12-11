@@ -31,7 +31,7 @@
         <i class="fas fa-truck"></i>
         <h4>ENVIOS GRATIS</h4>
           <hr class="hrFooter">
-        <div class="small text-black-50">PARA COMPRAS DE MÁS DE $100</div>
+        <div class="nomenclaturas" class="small">PARA COMPRAS DE MÁS DE $100</div>
         <hr class="hrFooter">
       </div>
 
@@ -39,7 +39,7 @@
         <i class="fas fa-credit-card"></i>
         <h4>HASTA 12 CUOTAS SIN INTERÉS</h4>
           <hr class="hrFooter">
-        <div class="small text-black-50">CON TODAS LAS TARJETAS DE CRÉDITO</div>
+        <div class="nomenclaturas" class="small">CON TODAS LAS TARJETAS DE CRÉDITO</div>
         <hr class="hrFooter">
       </div>
 
@@ -47,7 +47,7 @@
         <i class="fas fa-lock"></i>
         <h4>SITIO SEGURO</h4>
           <hr class="hrFooter">
-        <div class="small text-black-50">PROTEGEMOS TUS DATOS</div>
+        <div class="nomenclaturas" class="small">PROTEGEMOS TUS DATOS</div>
         <hr class="hrFooter">
       </div>
 

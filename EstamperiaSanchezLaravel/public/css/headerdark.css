@@ -6,6 +6,10 @@ nav{
 	/*text-transform: uppercase;*/
 	text-shadow: none;
 }
+
+ul li a{
+	color: white;
+}
 .btn-query{
 	font-family: 'Roboto', sans-serif;
 	background-color: white;
@@ -210,8 +214,8 @@ nav form{
 .toggle
 {
     position: absolute;
-    /* top: 40px; */
-    /* right: 50px; */
+    top: 40px;
+    right: 50px;
     background: #fff;
     border: 2px solid #00151f;
     width: 45px;

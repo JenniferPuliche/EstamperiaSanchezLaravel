@@ -425,7 +425,6 @@ hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
   border: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 small,
@@ -6137,14 +6136,24 @@ button.bg-danger:focus {
   background-color: #f8f9fa !important;
 }
 
+.light-mode {
+  background-color: #f8f9fa !important;
+}
+
 a.bg-light:hover, a.bg-light:focus,
 button.bg-light:hover,
 button.bg-light:focus {
   background-color: #dae0e5 !important;
 }
 
+.dark-mode {
+  background-color: #00151f !important;
+  /* color: white !important; */
+}
+
 .bg-dark {
-  background-color: #343a40 !important;
+  background-color: #00151f !important;
+  /* color: white !important; */
 }
 
 a.bg-dark:hover, a.bg-dark:focus,
@@ -7323,13 +7332,7 @@ button.bg-dark:focus {
   position: sticky !important;
 }
 
-.fixed-top {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-}
+
 
 .fixed-bottom {
   position: fixed;

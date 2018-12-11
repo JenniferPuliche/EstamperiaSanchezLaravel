@@ -1,5 +1,5 @@
 <header>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <nav id="navBar" class="navbar navbar-expand-lg fixed-top">
     <a class="navbar-brand" href="home"><img src="imagenes/logo.png" width="160px" class="d-inline-block align-top" alt="logo"></a>
     <button class="navbar-toggler" id="hamburguer" margin-left="auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -69,12 +69,15 @@
 
 
       </ul>
+
       <div class="">
         <form class="form-inline my-2 my-lg-0 mr-auto ml-auto">
           <input class="form-control mr-sm-2" type="Buscar" placeholder="Buscar..." aria-label="Buscar">
           <button class="btn btn-danger mr-auto ml-auto" type="submit">Buscar</button>
         </form>
       </div>
+      <div class="toggle"></div>
+
       </div>
       <br><br>
   </nav>

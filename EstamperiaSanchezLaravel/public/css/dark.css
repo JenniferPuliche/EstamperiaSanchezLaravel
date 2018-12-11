@@ -1,6 +1,14 @@
 body{
   padding-top: 100px;
   font-family: 'Roboto', sans-serif;
+  background: #232323;
+}
+
+li a{
+  color: white;
+}
+li a:hover{
+  color: red;
 }
 .fixed-top {
   position: fixed;
@@ -8,24 +16,22 @@ body{
   right: 0;
   left: 0;
   z-index: 1030;
-  background-color: #f8f9fa;
+  background-color: #121212;
 }
 
 footer{
-  background-color: #f8f9fa;
+  background-color: #232323;
 }
-
-
 .titleH3{
   color: rgb(199, 0, 0);
 }
 
 body hr{
-  color: black;
+  /* color: white; */
   width: 70px;
   text-align: center;
   size: 30%;
-  border-top: 1px solid rgba(0, 0, 0, 0.1)
+  border-top: 1px solid white;
 }
 
 /* .categorias{
@@ -41,6 +47,27 @@ h3{
 }
 h2{
   text-align: center;
+}
+h4{
+  color: white;
+}
+label{
+  color: white;
+}
+h5{
+  color: white;
+}
+i{
+  color: white;
+}
+/* hr{
+  color: white;
+} */
+h7{
+  color: white;
+}
+.nomenclaturas{
+  color:white;
 }
 
 h6{
@@ -97,9 +124,9 @@ a{
 }
 
 #facebookIcon{
-  color: black;
+  color: white;
   transition: 150ms;
 }
 #facebookIcon:hover{
-  color: #29487D;
+  color: blue;
 }
