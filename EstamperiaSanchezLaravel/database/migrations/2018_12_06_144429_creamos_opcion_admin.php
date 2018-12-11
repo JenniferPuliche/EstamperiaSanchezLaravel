@@ -30,11 +30,7 @@ class CreamosOpcionAdmin extends Migration
     public function down()
     {
       schema::table('users', function (Blueprint $table){
-        $table->dropColumn('admin');
-        $table->dropColumn('dni');
-        $table->dropColumn('phone');
-        $table->dropColumn('avatar');
-        $table->dropColumn('sexo');
+        $table->dropColumn(['admin','dni','tel', 'avatar', 'sexo']);
       });
     }
 }

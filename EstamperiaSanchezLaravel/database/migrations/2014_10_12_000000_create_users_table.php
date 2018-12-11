@@ -20,7 +20,7 @@ class CreateUsersTable extends Migration
             $table->string('city');
             $table->string('zipcode', 100);
             $table->rememberToken();
-            $table->timestamps();                        
+            $table->timestamps();
         });
 
         Schema::create('users', function (Blueprint $table) {
@@ -42,6 +42,7 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+      Schema::dropIfExists('users');
+      Schema::dropIfExists('directions');
     }
 }
