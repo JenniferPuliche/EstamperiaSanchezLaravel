@@ -79,8 +79,8 @@
                         </div>
 
                         <div class="form-group row mb-0">
-                            <div class="col-md-12 offset-md-12 text-md-right">
-                                <button type="submit" class="btn btn-primary">
+                            <div class="col-md-12 offset-md-5">
+                                <button type="submit" class="btn btn-danger mr-auto ml-auto">
                                     Registrate
                                 </button>
                             </div>
