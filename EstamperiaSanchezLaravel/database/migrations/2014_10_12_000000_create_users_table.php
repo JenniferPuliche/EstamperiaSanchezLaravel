@@ -16,7 +16,7 @@ class CreateUsersTable extends Migration
         Schema::create('directions', function(Blueprint $table){
             $table->increments('id');
             $table->string('street', 200);
-            $table->unsigninteger('number');
+            $table->unsignedInteger('number');
             $table->string('city');
             $table->string('zipcode', 100);
             $table->rememberToken();
@@ -32,6 +32,7 @@ class CreateUsersTable extends Migration
             $table->rememberToken();
             $table->timestamps();
         });
+
     }
 
     /**
