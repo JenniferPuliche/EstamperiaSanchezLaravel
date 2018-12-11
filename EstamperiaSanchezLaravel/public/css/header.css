@@ -210,8 +210,8 @@ nav form{
 .toggle
 {
     position: absolute;
-    /* top: 40px; */
-    /* right: 50px; */
+    top: 36px;
+    right: 355px;
     background: #fff;
     border: 2px solid #00151f;
     width: 45px;
@@ -229,8 +229,8 @@ nav form{
 {
     content: '';
     position: absolute;
-    top: 2px;
-    left: 2px;
+    top: 0px;
+    left: 0px;
     width: 16px;
     height: 16px;
     background: #00151f;

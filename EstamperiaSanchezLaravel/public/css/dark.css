@@ -41,9 +41,15 @@ li a:hover{
 #password{
   background-color: rgb(206, 212, 218);
 }
-#password{
+#password-confirm{
   background-color: rgb(206, 212, 218);
 }
+
+#buscarInput{
+  background-color: rgb(206, 212, 218);
+}
+
+
 .fixed-top {
   position: fixed;
   top: 0;
@@ -163,4 +169,8 @@ a{
 }
 #facebookIcon:hover{
   color: blue;
+}
+.fa-shopping-cart{
+  margin-top: 12px;
+  color: white;
 }

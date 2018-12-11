@@ -64,15 +64,18 @@
                     </form>
                 </div>
             </li>
-        @endguest
+            <li class="navbar-brand">
+            <a href="#"><i style="font-size:20px" class="fas fa-shopping-cart"></i> </a>
+          </li>
 
+        @endguest
 
 
       </ul>
 
       <div class="">
         <form class="form-inline my-2 my-lg-0 mr-auto ml-auto">
-          <input class="form-control mr-sm-2" type="Buscar" placeholder="Buscar..." aria-label="Buscar">
+          <input id="buscarInput"  class="form-control mr-sm-2" type="Buscar" placeholder="Buscar..." aria-label="Buscar">
           <button class="btn btn-danger mr-auto ml-auto" type="submit">Buscar</button>
         </form>
       </div>
