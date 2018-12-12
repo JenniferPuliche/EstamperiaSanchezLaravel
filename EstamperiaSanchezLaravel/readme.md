@@ -1,8 +1,7 @@
-TODO
-lARAVEL
+TODO:
 - ABM de productos: (Belu)
 
-- PaginaciOn de productos:
+- PaginaciOn de productos
 
 -Agregar en el inicio las categorías (Nacho)
 
@@ -13,12 +12,7 @@ lARAVEL
 
 JAVASCRIPT
 
-Validacion de javascript: pasar lo que ya estaba hecho: (Lea).
-
 Paises y provincias en el registro utilizando la api: (jenni)
-
-Alternar tema de css: (lea)
-
 
 OPCIONALES:
 Buscador de productos:
@@ -27,6 +21,14 @@ Categorizacion de productos:
 
 Generar Carrito funcional:
 
+
+
+
+TERMINADOS:
+
+
+Validacion de javascript: pasar lo que ya estaba hecho: (Lea). TERMINADO
+Alternar tema de css: (lea) TERMINADO 
 
 
 
