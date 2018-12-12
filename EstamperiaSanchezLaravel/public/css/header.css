@@ -175,6 +175,10 @@ nav form{
     display: none;
 }
 
+.nav-link:hover {
+    color: grey;
+}
+
 
 @media (min-width: 768px){
     .control-menu{

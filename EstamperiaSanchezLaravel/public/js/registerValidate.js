@@ -81,3 +81,19 @@ inputRePass.onblur = function (){
 function mostrar (){
   document.getElementById('hombre').style.display= 'none';
 }
+
+
+
+function traer(){
+  fetch('https://restcountries.eu/rest/v2/all')
+      .then(function(response){
+          return response.json();
+      })
+      .then(function(data){
+          console.log(data);
+      })
+      .catch(function(error){
+         return error;
+      })
+
+  }
