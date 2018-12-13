@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Product;
 use Illuminate\Http\Request;
-#TODO agregar validación al form product.create
+#@TODO agregar validación al form product.create
 class ProductController extends Controller
 {
     /**
