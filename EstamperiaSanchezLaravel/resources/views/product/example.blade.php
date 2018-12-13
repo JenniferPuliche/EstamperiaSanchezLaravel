@@ -21,7 +21,7 @@
 
 			<!-- ACA VA CAROUSEL CON ZOOM PARA VARIABLES DE PRODUCTO -->
 
-			<img  class="img-producto" src="imagenes/Remeras/NASA/<?php echo $rutaImagen; ?>" alt="remera nasa estampada" width="100%">
+			<img  class="img-producto" src="/imagenes/Remeras/NASA/<?php echo $rutaImagen; ?>" alt="remera nasa estampada" width="100%">
 		</div>
 
 		<sidebar class="col-sm-4  cont-descripcion" >
