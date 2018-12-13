@@ -67,12 +67,7 @@
 
 
 	</div>
-	<div class="dorm-goup justify-content-center"  style="display:flex">
-		<button class="btn btn-light" type="submit" href="/login/google"> Google </button>
-	</div>
-	<div class="dorm-goup justify-content-center" style="display:flex">
-		<button class="btn btn-light" type="submit"> Facebook </button>
-	</div>
+
 </section>
 @endsection
 

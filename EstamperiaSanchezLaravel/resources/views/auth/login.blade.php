@@ -8,6 +8,8 @@
 @include('includes.header')
 @endsection
 
+
+
 @section('main')
 <div class="container">
     <div class="row justify-content-center">
@@ -73,6 +75,15 @@
                                     ¿Olvidaste tu contraseña?
                                 </a>
                             </div>
+                        </div>
+                        <div class="dorm-goup justify-content-center"  style="display:flex">
+                      
+                          <a class="btn btn-block-light btn-social btn-google" >
+                            <i class="fab fa-google-plus-g" href="/login/google"></i> Iniciar sesión con Google
+                          </a>
+                          <a class="btn btn-block-light btn-social btn-google" >
+                            <i class="fab fa-facebook-f" href="/login/facebook"></i> Iniciar sesión con Facebook
+                          </a>
                         </div>
                     </form>
                 </div>
