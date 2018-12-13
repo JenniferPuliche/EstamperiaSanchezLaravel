@@ -18,6 +18,8 @@ Route::prefix('/product')->group(function(){
 	//OK
 	Route::post('/edit', 'ProductController@update')->middleware('auth');
 	Route::post('/update', 'ProductController@update')->middleware('auth');
+	Route::get('/remeras', 'ProductController@index');
+	Route::get('/example', 'ProductController@show');
 
 });
 Route::get('/welcome', function () {
@@ -29,9 +31,9 @@ Route::get('/home','HomeController@index')->name('homeLog');
 
 Route::get('/faqs', 'FaqsController@index');
 
-Route::get('/remeras', 'RemerasController@index');
 
-Route::get('/producto', 'ProductController@index');
+
+
 
 Auth::routes();
 

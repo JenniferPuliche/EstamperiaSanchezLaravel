@@ -18,7 +18,7 @@
 
 
 <div class="container">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center" style="width:100%">
         <div class="col-md-8">
             <div>
                 <div >
@@ -65,7 +65,7 @@
                             <select class="custom-select">
                               <option selected=""></option>
                             </select>
-                                
+
                             <div class="invalid-feedback"></div>
                         </div>
 
@@ -93,6 +93,15 @@
                                     Registrate
                                 </button>
                             </div>
+                        </div>
+                        <div class="dorm-goup justify-content-center"  style="display:flex">
+
+                          <a class="btn btn-block-light btn-social btn-google" >
+                            <i class="fab fa-google-plus-g" style="color:red" href="/login/google"></i> Iniciar sesión con Google
+                          </a>
+                          <a class="btn btn-block-light btn-social btn-google" >
+                            <i class="fab fa-facebook-f" style="color:#3b5998" href="/login/facebook"></i> Iniciar sesión con Facebook
+                          </a>
                         </div>
                     </form>
                 </div>

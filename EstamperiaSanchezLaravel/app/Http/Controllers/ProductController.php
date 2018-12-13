@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Product;
 use Illuminate\Http\Request;
-
+#@TODO agregar validación al form product.create
 class ProductController extends Controller
 {
     /**
@@ -16,9 +16,9 @@ class ProductController extends Controller
     {
         /* Clase alta baja */
         $products = Product::all(); // traigo todos los productos
-        $categories = Category::all(); // traigo las categorías (M-V-JUV)
-
-        return view ('pages.producto', compact(['product', 'categories']));
+        //$categories = Category::all(); // traigo las categorías (M-V-JUV)
+        //products.index
+        return view ('product.remeras', compact(['product', 'categories']));
     }
 
     /**
@@ -29,7 +29,7 @@ class ProductController extends Controller
     public function create()
     {
         //$categories = Category::all();
-        return view('auth.product');//->with('categories', $categories);
+        return view('product.create');//->with('categories', $categories);
     }
 
     /**
@@ -90,7 +90,7 @@ class ProductController extends Controller
      */
     public function show(Product $product)
     {
-
+        return view('product.example');
     }
 
     /**

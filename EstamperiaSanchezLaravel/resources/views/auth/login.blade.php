@@ -54,35 +54,31 @@
                         </div>
 
                         <div class="form-group row">
-                            <div class="col-md-6 offset-md-4">
+                            <div class="col-md-12 offset-md-4">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-
                                     <label class="form-check-label" for="remember">
                                         Mantener la sesión iniciada
                                     </label>
                                 </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group row mb-0">
-                            <div class="col-md-12 offset-md-4">
-                                <button type="submit" class="btn btn-danger mr-auto ml-auto">
-                                    Entrar
-                                </button>
-
                                 <a class="btn btn-link pass" href="{{ route('password.request') }}">
                                     ¿Olvidaste tu contraseña?
                                 </a>
                             </div>
                         </div>
+
+                        <div class="form-group row">
+                          <button type="submit" class="btn btn-danger mr-auto ml-auto justify-content-center" >
+                              Entrar
+                          </button>
+                        </div>
                         <div class="dorm-goup justify-content-center"  style="display:flex">
 
                           <a class="btn btn-block-light btn-social btn-google" >
-                            <i class="fab fa-google-plus-g" href="/login/google"></i> Iniciar sesión con Google
+                            <i class="fab fa-google-plus-g" style="color:red" href="/login/google"></i> Iniciar sesión con Google
                           </a>
                           <a class="btn btn-block-light btn-social btn-google" >
-                            <i class="fab fa-facebook-f" href="/login/facebook"></i> Iniciar sesión con Facebook
+                            <i class="fab fa-facebook-f" style="color:#3b5998" href="/login/facebook"></i> Iniciar sesión con Facebook
                           </a>
                         </div>
                     </form>

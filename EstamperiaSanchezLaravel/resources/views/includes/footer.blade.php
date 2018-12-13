@@ -65,21 +65,21 @@
         </div>
         <div class="col-12" id="grupoTarjetas">
 
-          <img class="tarjetas" src="imagenes/tarjetas/amex.png" alt="amex">
-          <img class="tarjetas" src="imagenes/tarjetas/argencard.png" alt="amex">
-          <img class="tarjetas" src="imagenes/tarjetas/banelco.png" alt="amex">
-          <img class="tarjetas" src="imagenes/tarjetas/cabal.png" alt="amex">
-          <img class="tarjetas" src="imagenes/tarjetas/cencosud.png" alt="amex">
-          <img class="tarjetas" src="imagenes/tarjetas/diners.png" alt="amex">
-          <img class="tarjetas" src="imagenes/tarjetas/mastercard.png" alt="amex">
-          <img class="tarjetas" src="imagenes/tarjetas/mercado-envios.png" alt="amex">
-          <img class="tarjetas" src="imagenes/tarjetas/mercadopago.png" alt="amex">
-          <img class="tarjetas" src="imagenes/tarjetas/naranja.png" alt="amex">
-          <img class="tarjetas" src="imagenes/tarjetas/nativa.png" alt="amex">
-          <img class="tarjetas" src="imagenes/tarjetas/pagofacil.png" alt="amex">
-          <img class="tarjetas" src="imagenes/tarjetas/rapipago.png" alt="amex">
-          <img class="tarjetas" src="imagenes/tarjetas/shopping.png" alt="amex">
-          <img class="tarjetas" src="imagenes/tarjetas/visa.png" alt="amex">
+          <img class="tarjetas" src="/imagenes/tarjetas/amex.png" alt="amex">
+          <img class="tarjetas" src="/imagenes/tarjetas/argencard.png" alt="amex">
+          <img class="tarjetas" src="/imagenes/tarjetas/banelco.png" alt="amex">
+          <img class="tarjetas" src="/imagenes/tarjetas/cabal.png" alt="amex">
+          <img class="tarjetas" src="/imagenes/tarjetas/cencosud.png" alt="amex">
+          <img class="tarjetas" src="/imagenes/tarjetas/diners.png" alt="amex">
+          <img class="tarjetas" src="/imagenes/tarjetas/mastercard.png" alt="amex">
+          <img class="tarjetas" src="/imagenes/tarjetas/mercado-envios.png" alt="amex">
+          <img class="tarjetas" src="/imagenes/tarjetas/mercadopago.png" alt="amex">
+          <img class="tarjetas" src="/imagenes/tarjetas/naranja.png" alt="amex">
+          <img class="tarjetas" src="/imagenes/tarjetas/nativa.png" alt="amex">
+          <img class="tarjetas" src="/imagenes/tarjetas/pagofacil.png" alt="amex">
+          <img class="tarjetas" src="/imagenes/tarjetas/rapipago.png" alt="amex">
+          <img class="tarjetas" src="/imagenes/tarjetas/shopping.png" alt="amex">
+          <img class="tarjetas" src="/imagenes/tarjetas/visa.png" alt="amex">
         </div>
 
       </div>
