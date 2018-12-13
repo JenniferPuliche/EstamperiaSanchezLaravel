@@ -3,7 +3,9 @@ body{
   font-family: 'Roboto', sans-serif;
   background: #232323;
 }
-
+.container{
+padding-top: 10px;
+}
 li a{
   color: white;
 }
@@ -81,6 +83,7 @@ body hr{
 
 #hamburguer{
  margin-left: auto;
+ color: black;
 }
 h3{
   text-align: center;

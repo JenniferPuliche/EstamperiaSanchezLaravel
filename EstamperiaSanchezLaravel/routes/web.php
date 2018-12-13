@@ -34,3 +34,7 @@ Route::get('/remeras', 'RemerasController@index');
 Route::get('/producto', 'ProductController@index');
 
 Auth::routes();
+
+
+Route::get('login/google', 'Auth\LoginController@redirectToProviderGoogle');
+Route::get('login/google/callback', 'Auth\LoginController@handleProviderCallbackGoogle');
