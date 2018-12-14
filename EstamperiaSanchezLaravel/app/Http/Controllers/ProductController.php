@@ -81,7 +81,7 @@ class ProductController extends Controller
 
         //$product->save();
 
-        return redirect('/product/create');
+        return redirect('/product');
     }
 
     /**
@@ -164,6 +164,7 @@ class ProductController extends Controller
      */
     public function destroy($id)
     {
-        return view ('product.example');
+        Product::find($id)->delete();
+        return redirect('/product');
     }
 }

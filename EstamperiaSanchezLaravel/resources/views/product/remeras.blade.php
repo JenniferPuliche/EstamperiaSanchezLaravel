@@ -30,7 +30,7 @@
 					<h5 class="nombreRemera">{{ $product->name }}</h5>
 				</a>
 				<a href="/product/edit/{{$product->id}}"> Editar </a>
-				<a href="/product/destroy/{{$product->id}}"> Eliminar</a>
+				<a href="/product/delete/{{$product->id}}"> Eliminar</a>
 			</div>
 			{{--TERMINA CADA PRODUCTO--}}
 		@empty
