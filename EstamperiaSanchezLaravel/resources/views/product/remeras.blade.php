@@ -21,13 +21,25 @@
 </div>
 
 <section>
-<div class="remeras">
-	<div class="remera" id="hombre">
-		<a href="/product/example">
-			<img src="/imagenes/Categorias/hombre/bordo.png" alt="calse remera 0" class="imgreme">
-			<h5 class="nombreRemera">NASA</h5>
-		</a>
+	<div class="remeras">
+		@forelse ($products as $product)
+			{{--EMPIEZA CADA PRODUCTO--}}
+			<div class="remera" id="hombre">
+				<a href="/product/example">
+					<img src="/{{ $product->image }}" alt="calse remera 0" class="imgreme">
+					<h5 class="nombreRemera">{{ $product->name }}</h5>
+				</a>
+			</div>
+			{{--TERMINA CADA PRODUCTO--}}
+		@empty
+				<div class="alert alert-danger" role="alert">
+					No hay productos registrados
+				</div>
+		@endforelse
 	</div>
+
+<!--<div class="remeras">
+
 	<div class="remera" id="hombre">
 		<a href="/product/example">
 			<img src="/imagenes/Categorias/hombre/cate1.png" alt="calse remera 1" class="imgreme">
@@ -125,7 +137,7 @@
 		</a>
 	</div>
 
-</div>
+</div>-->
 
 
 </section>

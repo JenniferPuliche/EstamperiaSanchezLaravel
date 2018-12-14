@@ -15,10 +15,11 @@ class ProductController extends Controller
     public function index()
     {
         /* Clase alta baja */
-        $products = Product::all(); // traigo todos los productos
+        $products = Product::all();//paginate(5); // traigo todos los productos
         //$categories = Category::all(); // traigo las categorías (M-V-JUV)
         //products.index
-        return view ('product.remeras', compact(['product', 'categories']));
+        //compact(['products', 'categories']));
+        return view ('product.remeras', compact('products'));
     }
 
     /**
@@ -57,15 +58,16 @@ class ProductController extends Controller
         //dd($request->all());
         //consulto si hay imagen y la guardo
         if($request->file('image')){
-            $path = $request->file('image')->storePublicly('products');
+            $nombreArchivo= $request->input('name').'.'.$request->file('image')->extension();
+            $path = $request->file('image')->storePubliclyAs('public/products', $nombreArchivo);
         }
         // Creo el objeto proudcto y lo guardo en la DB
 
         //@TODO
         $product = Product::create([
             'name' => $request->input('name'),
-            'wholesale_price' => $request->input('price')??0,
-            'retail_price' => $request->input('price')??0,
+            'wholesale_price' => $request->input('wholesale_price')??0,
+            'retail_price' => $request->input('retail_price')??0,
             'image' => $path??null,
         ]);
         // Relaciono el ID con la categoria ID
@@ -99,9 +101,9 @@ class ProductController extends Controller
      * @param  \App\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function edit(Product $product)
+    public function edit()
     {
-        //
+        //$product = Product::find()
     }
 
     /**
