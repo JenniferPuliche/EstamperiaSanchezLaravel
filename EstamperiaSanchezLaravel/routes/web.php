@@ -16,9 +16,10 @@ Route::prefix('/product')->group(function(){
 	Route::get('/create', 'ProductController@create')->middleware('auth');
 	Route::post('/create', 'ProductController@store')->middleware('auth');
 	//OK
-	Route::post('/edit', 'ProductController@update')->middleware('auth');
-	Route::post('/update', 'ProductController@update')->middleware('auth');
-	Route::get('/remeras', 'ProductController@index');
+	Route::get('/edit/{id}', 'ProductController@edit')->middleware('auth');
+	Route::post('/update/{id}', 'ProductController@update')->middleware('auth');
+	Route::get('/destroy/{id}', 'ProductController@destroy')->middleware('auth');
+	//Route::get('/remeras', 'ProductController@index');
 	Route::get('/example', 'ProductController@show');
 
 });
