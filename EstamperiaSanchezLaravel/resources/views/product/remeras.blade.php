@@ -26,7 +26,7 @@
 			{{--EMPIEZA CADA PRODUCTO--}}
 			<div class="remera" id="hombre">
 				<a href="/product/example">
-					<img src="/{{ $product->image }}" alt="calse remera 0" class="imgreme">
+					<img src="/{{ $product->image }}" alt="calse remera {{ $product->id }}" class="imgreme">
 					<h5 class="nombreRemera">{{ $product->name }}</h5>
 				</a>
 				<a href="/product/edit/{{$product->id}}"> Editar </a>
@@ -40,6 +40,8 @@
 		@endforelse
 	</div>
 
+<!--FLECHAS PARA NEXT O PREV !-->
+{{ $products->links() }}
 <!--<div class="remeras">
 
 	<div class="remera" id="hombre">
