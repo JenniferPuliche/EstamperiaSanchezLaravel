@@ -30,9 +30,10 @@ inputName.onblur = function (){
   if (inputName.value == "") {
     // var errorEmail = document.createElement('span');
     this.classList.add("is-invalid")
-    this.parentNode.querySelector('.invalid-feedback').innerText = 'Ingrese un nombre válido';
-    // errorEmail.appendChild(text);
-    // inputEmail.parentElement.innerText(errorEmail);
+    this.parentNode.querySelector('.invalid-feedback').innerText = 'Ingrese un nombre válido'
+  }else {
+    this.classList.remove("is-invalid")
+    this.parentNode.querySelector('.invalid-feedback').innerText = ''
   }
 }
 
@@ -41,9 +42,11 @@ inputEmail.onblur = function (){
     // var errorEmail = document.createElement('span');
     this.classList.add("is-invalid")
     this.parentNode.querySelector('.invalid-feedback').innerText = 'Ingrese un Email válido';
-    // errorEmail.appendChild(text);
-    // inputEmail.parentElement.innerText(errorEmail);
-  }
+    }else {
+      this.classList.remove("is-invalid")
+      this.parentNode.querySelector('.invalid-feedback').innerText = ''
+    }
+
 }
 inputPhone.onblur = function (){
   // console.log(inputPhone.value)
@@ -51,8 +54,9 @@ inputPhone.onblur = function (){
     // var errorPhone = document.createElement('span');
     this.classList.add("is-invalid")
     this.parentNode.querySelector('.invalid-feedback').innerText = 'Ingrese un teléfono válido';
-    // errorPhone.appendChild(text);
-    // inputPhone.parentElement.appendChild(errorPhone);
+  }else {
+    this.classList.remove("is-invalid")
+    this.parentNode.querySelector('.invalid-feedback').innerText = ''
   }
 }
 inputPass.onblur = function(){
@@ -60,19 +64,19 @@ inputPass.onblur = function(){
     // var errorPassLength = document.createElement('span');
     this.classList.add("is-invalid")
     this.parentNode.querySelector('.invalid-feedback').innerText = 'Ingrese una contraseña válida';
-        // errorPassLength.appendChild(text);
-    // inputPass.parentElement.appendChild(errorPassLength);
-    // console.log(inputPass.length)
+  }else {
+    this.classList.remove("is-invalid")
+    this.parentNode.querySelector('.invalid-feedback').innerText = ''
   }
 }
 inputRePass.onblur = function (){
   if (inputRePass.value !== inputPass.value) {
     this.classList.add("is-invalid")
     this.parentNode.querySelector('.invalid-feedback').innerText = 'La contraseñas no son iguales';
-    // var errorRePassLength = document.createElement('span');
-    // var text = document.createTextNode('La contraseñas no son iguales');
-    // errorRePassLength.appendChild(text);
-    // inputRePass.parentElement.appendChild(errorRePassLength);
+    var errorRePassLength = document.createElement('span');
+    var text = document.createTextNode('La contraseñas no son iguales');
+    errorRePassLength.appendChild(text);
+    inputRePass.parentElement.appendChild(errorRePassLength);
     // console.log(inputPass.length)
   }
 }

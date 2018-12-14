@@ -17,7 +17,7 @@ class CreamosOpcionAdmin extends Migration
           $table->string('admin')->default(0);
           $table->string('dni')->nullable();
           $table->string('tel')->nullable();
-          $table->string('avatar')->nullable()->default(0);
+          $table->string('avatar')->nullable()->default('avatarDefault.png');
           $table->string('sexo')->nullable();
         });
     }

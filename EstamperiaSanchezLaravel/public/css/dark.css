@@ -3,6 +3,12 @@ body{
   font-family: 'Roboto', sans-serif;
   background: #232323;
 }
+
+.miAvatar{
+  margin: 0 auto;
+  width: 25%;
+}
+
 .container{
 padding-top: 10px;
 }
@@ -94,6 +100,9 @@ h2{
 h4{
   color: white;
 }
+h3{
+  color:white;
+}
 label{
   color: white;
 }
@@ -147,6 +156,14 @@ a{
   flex-wrap: wrap;
   justify-content: space-around;
 
+}
+
+.userDate{
+  font-size: 25px;
+  color: white;
+}
+.userDates{
+  align-self: center;
 }
 
 .categorias{

@@ -100,7 +100,7 @@
                             <i class="fab fa-google-plus-g" style="color:red" href="/login/google"></i> Iniciar sesión con Google
                           </a>
                           <a class="btn btn-block-light btn-social btn-google" >
-                            <i class="fab fa-facebook-f" style="color:#3b5998" href="/login/facebook"></i> Iniciar sesión con Facebook
+                            <i class="fab fa-facebook-square" style="color:#3b5998" href="/login/facebook"></i> Iniciar sesión con Facebook
                           </a>
                         </div>
                     </form>

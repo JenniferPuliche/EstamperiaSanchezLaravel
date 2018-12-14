@@ -1,6 +1,6 @@
 <header>
   <nav id="navBar" class="navbar navbar-expand-lg fixed-top">
-    <a class="navbar-brand" href="home"><img src="/imagenes/logo.png" width="160px" class="d-inline-block align-top" alt="logo"></a>
+    <a class="navbar-brand" href="/home"><img src="/imagenes/logo.png" width="160px" class="d-inline-block align-top" alt="logo"></a>
     <button class="navbar-toggler" id="hamburguer" margin-left="auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     </button>
@@ -53,15 +53,26 @@
                 </a>
 
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" style="font-size:15px" href="{{ route('logout') }}"
+
+
+                  <a class="dropdown-item" style="font-size:15px" href="product/create">
+                      Agregar Producto
+                  </a>
+
+                  <a class="dropdown-item" style="font-size:15px" href="/miPerfil">
+                      Mi Perfil
+                  </a>
+
+                  <a class="dropdown-item" style="font-size:15px" href="{{ route('logout') }}"
                        onclick="event.preventDefault();
                                      document.getElementById('logout-form').submit();">
-                        SALIR
-                    </a>
+                        Salir
+                  </a>
 
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                         @csrf
                     </form>
+
                 </div>
             </li>
             <li class="navbar-brand">

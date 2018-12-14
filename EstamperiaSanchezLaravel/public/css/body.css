@@ -11,6 +11,10 @@ body{
   background-color: #f8f9fa;
 }
 
+.miAvatar{
+  margin: 0 auto;
+  width: 25%;
+}
 
 .container{
 padding-top: 10px;
@@ -85,6 +89,12 @@ a{
   justify-content: space-around;
 
 }
+.userDate{
+  font-size: 25px;
+}
+.userDates{
+  align-self: center;
+}
 
 .categorias{
   margin-top: 20px;
@@ -103,12 +113,12 @@ a{
   opacity: 0.8;
 }
 
-#facebookIcon{
-  color: black;
+.fa-facebook-square{
+  color: #29487D;
   transition: 150ms;
 }
-#facebookIcon:hover{
-  color: #29487D;
+.fa-facebook-square:hover{
+  color: black;
 }
 
 .fa-shopping-cart{

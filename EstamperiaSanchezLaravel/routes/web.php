@@ -32,7 +32,7 @@ Route::get('/home','HomeController@index')->name('homeLog');
 Route::get('/faqs', 'FaqsController@index');
 
 
-
+Route::get('/miPerfil','UserController@index')->name('miPerfil');
 
 
 Auth::routes();
