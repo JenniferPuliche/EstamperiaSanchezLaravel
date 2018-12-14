@@ -15,7 +15,7 @@ class ProductController extends Controller
     public function index()
     {
         /* Clase alta baja */
-        $products = Product::all();//paginate(5); // traigo todos los productos
+        $products = Product::paginate(4);//paginate(5); // traigo todos los productos
         //$categories = Category::all(); // traigo las categorías (M-V-JUV)
         //products.index
         //compact(['products', 'categories']));
@@ -81,7 +81,7 @@ class ProductController extends Controller
 
         //$product->save();
 
-        return redirect('/product/create');
+        return redirect('/product');
     }
 
     /**
@@ -101,9 +101,14 @@ class ProductController extends Controller
      * @param  \App\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function edit()
+    public function edit($id)
     {
-        //$product = Product::find()
+      //Busco el producto id
+      $product = Product::find($id);
+
+      //dd($product);
+      //paso los datos al formulario
+      return view('product.edit', compact('product'));
     }
 
     /**
@@ -113,9 +118,42 @@ class ProductController extends Controller
      * @param  \App\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Product $product)
+    public function update($id, Request $request)
     {
-        //
+      //dd($id);
+      //Busco la información vieja del producto
+      $product = Product::find($id);
+      $path = $product->image;
+      //Valido nuevos datos
+      $this->validate($request, [
+          'name' => 'required',
+          'image'=> 'nullable|image',
+          'wholesale_price' =>'nullable|integer|min:0',
+          'retail_price' =>'nullable|integer|min:0'
+      ]);
+      //Redefino el path nuevo de imagen
+      if($request->file('image')){
+          $nombreArchivo= $request->input('name').'.'.$request->file('image')->extension();
+          //Borramos la imagen vieja
+          \Storage::delete($path);
+          //Guardamos la nueva iamgen
+          $path = $request->file('image')->storePubliclyAs('public/products', $nombreArchivo);
+      }
+      //Actualizo la información
+      $product->update([
+          'name' => $request->input('name'),
+          'wholesale_price' => $request->input('wholesale_price')??0,
+          'retail_price' => $request->input('retail_price')??0,
+          'image' => $path??null,
+      ]);
+
+      // $product->name = $request->input('name')??0;
+      // $product->image = $request->input('name')??0;
+      // $product->wholesale_price = $request->input('whole_price')??0;
+      // $product->retail_price = $request->input('retail_price')??0;
+      // $product->image = $path;
+      // $product->save();
+      return redirect('/product');
     }
 
     /**
@@ -124,8 +162,9 @@ class ProductController extends Controller
      * @param  \App\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Product $product)
+    public function destroy($id)
     {
-        //
+        $product = Product::find($id)->delete();
+        return redirect('/product');
     }
 }
