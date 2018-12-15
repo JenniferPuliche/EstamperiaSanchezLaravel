@@ -5,12 +5,15 @@
 @endsection
 
 @section('header')
-@include('includes.header')
+@include('includes.header2')
 @endsection
 
 
 
 @section('main')
+
+
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -18,6 +21,7 @@
               <div >
                 <h3><span class="titleH3">INGRESA</span></h3>
               </div>
+              <span class="navbar-toggler-icon"></span>
               <h4>Más que una estampa, tu estilo</h4>
             </div>
 
@@ -72,15 +76,15 @@
                               Entrar
                           </button>
                         </div>
-                        <div class="dorm-goup justify-content-center"  style="display:flex">
+                        <!-- <div class="dorm-goup justify-content-center"  style="display:flex">
 
                           <a class="btn btn-block-light btn-social btn-google" >
-                            <i class="fab fa-google-plus-g" style="color:red" href="/login/google"></i> Iniciar sesión con Google
+                            <i class="fab fa-google-plus-g" style="color:red" href="/login/google"></i> <h7 class="iniciarSesionCon">Iniciar sesión con Google</h7>
                           </a>
                           <a class="btn btn-block-light btn-social btn-google" >
-                            <i class="fab fa-facebook-square" href="/login/facebook"></i> Iniciar sesión con Facebook
+                            <i class="fab fa-facebook-square" href="/login/facebook"></i> <h7 class="iniciarSesionCon">Iniciar sesión con Facebook</h7>
                           </a>
-                        </div>
+                        </div> -->
                     </form>
                 </div>
               </div>

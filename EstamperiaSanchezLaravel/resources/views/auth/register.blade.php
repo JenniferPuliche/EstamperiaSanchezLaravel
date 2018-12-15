@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
 <section>
-  @include('includes.header')
+  @include('includes.header2')
 </section>
 
 
@@ -77,7 +77,7 @@
                             </select>
                             <div class="invalid-feedback"></div>
                         </div>
-                        
+
                         <div class="form-group row" id="prov" style="display:none">
                             <label for="text" class="col-form-label text-md-right">Provincia:</label>
                             <select class="custom-select" id="provincias" name="provincia" >
@@ -112,18 +112,20 @@
                                 </button>
                             </div>
                         </div>
-<<<<<<< HEAD
-                        <div class="dorm-goup justify-content-center"  style="display:flex">
 
-                          <a class="btn btn-block-light btn-social btn-google" >
-                            <i class="fab fa-google-plus-g" style="color:red" href="/login/google"></i> Iniciar sesión con Google
-                          </a>
-                          <a class="btn btn-block-light btn-social btn-google" >
-                            <i class="fab fa-facebook-square" style="color:#3b5998" href="/login/facebook"></i> Iniciar sesión con Facebook
-                          </a>
-                        </div>
-=======
->>>>>>> 7e2083a65b850e7753877f7957a5d1ab2b0bcba7
+                        <!-- <div class="form-group row"  style="display:flex">
+
+                            <a class="btn btn-block-light btn-social btn-google" >
+                              <i class="fab fa-google-plus-g" style="color:red" href="/login/google"></i>
+                              <h7>Iniciar sesión con Google</h7>
+                            </a>
+                            <a class="btn btn-block-light btn-social btn-google" >
+                              <i class="fab fa-facebook-square" style="color:#3b5998" href="/login/facebook"></i>
+                              <h7>Iniciar sesión con Facebook</h7>
+                            </a>
+
+                        </div> -->
+
                     </form>
                 </div>
             </div>

@@ -16,6 +16,7 @@ nav{
 }
 .btn-query span{
 	font-weight: 600;
+	opacity: 80%;
 }
 
 .btn-query:hover{
@@ -214,8 +215,9 @@ nav form{
 .toggle
 {
     position: absolute;
-    top: 43px;
-    right: 355px;
+		margin-top: 13px;
+    /* top: 43px; */
+    /* right: 355px; */
     background: #fff;
     border: 2px solid #00151f;
     width: 45px;

@@ -1,7 +1,10 @@
 body{
-  padding-top: 100px;
+  /* padding-top: 100px; */
   font-family: 'Roboto', sans-serif;
   background: #232323;
+}
+#navBar{
+  background-color: black;
 }
 
 .miAvatar{
@@ -12,10 +15,15 @@ body{
 .container{
 padding-top: 10px;
 }
-li a{
+
+.nav-link{
   color: white;
 }
-li a:hover{
+
+#navA{
+  color: white;
+}
+.nav-link:hover{
   color: red;
 }
 
@@ -89,7 +97,7 @@ body hr{
 
 #hamburguer{
  margin-left: auto;
- color: black;
+ color: white;
 }
 h3{
   text-align: center;
@@ -106,6 +114,7 @@ h3{
 label{
   color: white;
 }
+
 h5{
   color: white;
 }

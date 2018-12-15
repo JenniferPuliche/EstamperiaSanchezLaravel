@@ -3,9 +3,17 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Cookie;
 
 class HomeController extends Controller
 {
+
+
+    // public function switchMode()
+    // {
+    //     Cookie::queue('CookieMode', 'dark', 60);
+    //     return 'dark';
+    // }
     /**
      * Create a new controller instance.
      *

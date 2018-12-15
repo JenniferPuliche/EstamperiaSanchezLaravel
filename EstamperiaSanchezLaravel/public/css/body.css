@@ -1,7 +1,12 @@
 body{
-  padding-top: 100px;
+  /* padding-top: 100px; */
   font-family: 'Roboto', sans-serif;
 }
+
+#navBar{
+  background-color: #f8fafc;
+}
+
 .fixed-top {
   position: fixed;
   top: 0;

@@ -6,7 +6,7 @@
 @endsection
 
 @section('header')
-@include('includes.header')
+@include('includes.header2')
 @endsection
 
 @section('main')
