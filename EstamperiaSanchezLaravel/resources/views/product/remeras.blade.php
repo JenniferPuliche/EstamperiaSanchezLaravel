@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="/css/remeras.css">
 
 @section('header')
-@include('includes.header')
+@include('includes.header2')
 @endsection
 
 @section('main')

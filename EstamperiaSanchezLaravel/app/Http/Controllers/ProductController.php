@@ -15,7 +15,7 @@ class ProductController extends Controller
     public function index()
     {
         /* Clase alta baja */
-        $products = Product::paginate(4);//paginate(5); // traigo todos los productos
+        $products = Product::paginate(8);//paginate(5); // traigo todos los productos
         //$categories = Category::all(); // traigo las categorías (M-V-JUV)
         //products.index
         //compact(['products', 'categories']));

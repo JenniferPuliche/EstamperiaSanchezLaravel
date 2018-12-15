@@ -20,34 +20,32 @@
               <div>
                 <h3>Hola<span class="titleH3"> {{ Auth::user()->name }}</span></h3>
               </div>
-
-
-
-
-							<section class="categorias">
-
-							<div id="galeria" style="display:flex">
-								<div class="userDates">
-									<ul>
-										<li class="userDate">Email<span class="titleH3"> {{ Auth::user()->email }}</span></li>
-										<li class="userDate">DNI:<span class="titleH3"> {{ Auth::user()->dni }}</span></li>
-										<li class="userDate">Teléfono<span class="titleH3"> {{ Auth::user()->tel }}</span></li>
-										<li class="userDate">Sexo<span class="titleH3"> {{ Auth::user()->sexo }}</span></li>
-								</ul>
-								</div>
-								<div class="categ">
-									<img class="miAvatar" src="imagenes/avatars/{{ Auth::user()->avatar }}"  alt="miAvatar">
-								</div>
-
-
-
-							</div>
-
-						</section>
+				<section class="categorias">
+					<div id="galeria" style="display:flex">
+						<div class="userDates">
+							<ul>
+								<li class="userDate">Email<span class="titleH3"> {{ Auth::user()->email }}</span></li>
+								<li class="userDate">DNI:<span class="titleH3"> {{ Auth::user()->dni }}</span></li>
+								<li class="userDate">Teléfono<span class="titleH3"> {{ Auth::user()->tel }}</span></li>
+								<li class="userDate">Sexo<span class="titleH3"> {{ Auth::user()->sexo }}</span></li>
+						</ul>
+						<div class="form-group row mb-0">
+                            <div class="col-md-12 offset-md-5">
+                                <button type="submit" class="btn btn-danger mr-auto ml-auto">
+                                    Editar MiPerfil
+                                </button>
+                            </div>
+                        	</div>
+						</div>
+						<div class="categ">
+							<img class="miAvatar" src="imagenes/avatars/{{ Auth::user()->avatar }}"  alt="miAvatar">
+						</div>
 					</div>
-				</div>
+				</section>
 			</div>
 		</div>
+	</div>
+</div>
 
 
 @endsection

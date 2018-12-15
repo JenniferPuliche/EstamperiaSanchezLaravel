@@ -206,4 +206,6 @@ div .Precio h6{
 	font-weight: 200;
 	color: rgb(124, 124, 124);
 	font-style: italic;
+	position: inherit;
+	font-size: inherit;
 }
