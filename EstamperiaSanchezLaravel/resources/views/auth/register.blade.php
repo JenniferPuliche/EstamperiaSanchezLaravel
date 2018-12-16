@@ -48,6 +48,17 @@
                                   @endif
                         </div>
 
+                        <div class="form-group row">
+                            <label for="dni" class="col-form-label text-md-right">DNI:</label>
+                              <input id="dni" type="text" class="form-control{{ $errors->has('dni') ? ' is-invalid' : '' }}" name="dni" value="{{ old('dni') }}"  autofocus>
+                              <div class="invalid-feedback"></div>
+                                  @if ($errors->has('dni'))
+                                      <span class="invalid-feedback" role="alert">
+                                          <strong>{{ $errors->first('dni') }}</strong>
+                                      </span>
+                                  @endif
+                        </div>
+
 
                         <div class="form-group row">
                             <label for="email" class="col-form-label text-md-right">Correo electrónico:</label>
@@ -61,11 +72,11 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="userPhone" class="col-form-label text-md-right">Numero de teléfono:</label>
-                                <input id="userPhone" type="tel" class="form-control{{ $errors->has('userPhone') ? ' is-invalid' : '' }}" name="userPhone" value="{{ old('userPhone') }}" >
-                                @if ($errors->has('userPhone'))
+                            <label for="tel" class="col-form-label text-md-right">Numero de teléfono:</label>
+                                <input id="tel" type="tel" class="form-control{{ $errors->has('tel') ? ' is-invalid' : '' }}" name="tel" value="{{ old('tel') }}" >
+                                @if ($errors->has('tel'))
                                     <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('userPhone') }}</strong>
+                                        <strong>{{ $errors->first('tel') }}</strong>
                                     </span>
                                 @endif
                             <div class="invalid-feedback"></div>

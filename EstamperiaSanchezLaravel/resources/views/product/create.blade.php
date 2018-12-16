@@ -5,7 +5,7 @@
 @endsection
 
 @section('header')
-@include('includes.header')
+@include('includes.header2')
 @endsection
 
 @section('main')
@@ -14,7 +14,7 @@
         <div class="col-md-8">
           <div>
               <div >
-                <h3><span class="titleH3">Agregar nuevo producto</span></h3>
+                <h3>Agregar<span class="titleH3"> nuevo producto</span></h3>
               </div>
             </div>
 
@@ -23,7 +23,7 @@
                         @csrf
 
                         <div class="form-group row">
-                            <label for="name" class=" col-form-label text-md-right">Nombre</label>
+                            <label for="name" class=" col-form-label text-md-right">Nombre:</label>
                                 <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus>
 
                                 @if ($errors->has('name'))
@@ -34,8 +34,8 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="wholesale_price" class=" col-form-label text-md-right">Precio mayorista</label>
-                                <input id="wholesale_price" type="text" class="form-control{{ $errors->has('wholesale_price') ? ' is-invalid' : '' }}" name="wholesale_price" value="{{ old('wholesale_price') }}" required autofocus>
+                            <label for="wholesale_price" class=" col-form-label text-md-right">Precio mayorista:</label>
+                                <input id="wholesale_price"  type="text" class="form-control{{ $errors->has('wholesale_price') ? ' is-invalid' : '' }}" name="wholesale_price" value="{{ old('wholesale_price') }}" required autofocus>
 
                                 @if ($errors->has('wholesale_price'))
                                     <span class="invalid-feedback" role="alert">
@@ -45,7 +45,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="retail_price" class=" col-form-label text-md-right">Precio Minorista</label>
+                            <label for="retail_price" class=" col-form-label text-md-right">Precio Minorista:</label>
                                 <input id="retail_price" type="text" class="form-control{{ $errors->has('retail_price') ? ' is-invalid' : '' }}" name="retail_price" value="{{ old('retail_price') }}" required autofocus>
 
                                 @if ($errors->has('retail_price'))
@@ -55,8 +55,9 @@
                                 @endif
                         </div>
 
-                        <div class="col-md-6">
-                            <input id="image" type="file" class="form-control{{ $errors->has('image') ? ' is-invalid' : '' }}" name="image">
+                        <div class="form-group row">
+                          <label for="imagen" class=" col-form-label text-md-right">Ingrese la imagen del producto:</label>
+                            <input id="image" type="file"  name="image">
                             @if ($errors->has('image'))
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $errors->first('image') }}</strong>
@@ -66,7 +67,7 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-danger">
                                     Guardar producto
                                 </button>
                             </div>

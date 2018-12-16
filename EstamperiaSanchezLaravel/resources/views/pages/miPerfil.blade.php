@@ -33,6 +33,11 @@
 										<li class="userDate">DNI:<span class="titleH3"> {{ Auth::user()->dni }}</span></li>
 										<li class="userDate">Teléfono<span class="titleH3"> {{ Auth::user()->tel }}</span></li>
 										<li class="userDate">Sexo<span class="titleH3"> {{ Auth::user()->sexo }}</span></li>
+                    <li>
+                      <a href="editProfile">
+                        <button class="btn btn-danger" type="submit" name="button"> Editar Datos</button>
+                      </a>
+                    </li>
 								</ul>
 								</div>
 								<div class="categ">

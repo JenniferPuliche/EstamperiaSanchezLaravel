@@ -118,6 +118,11 @@ a{
   opacity: 0.8;
 }
 
+#image{
+  margin-top: 50px;
+  margin-left: -200px;
+}
+
 .fa-facebook-square{
   color: #29487D;
   transition: 150ms;
