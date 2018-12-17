@@ -40,7 +40,7 @@
                     Agregar Producto
                 </a>
 
-                <a id="navA" class="dropdown-item" style="font-size:15px" href="/miPerfil">
+                <a id="navA" class="dropdown-item" style="font-size:15px" href="{{ route('profile') }}">
                     Mi Perfil
                 </a>
 

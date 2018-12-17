@@ -23,6 +23,7 @@ Route::prefix('/product')->group(function(){
 	Route::get('/example', 'ProductController@show');
 
 });
+
 Route::get('/welcome', function () {
     return view('welcome');
 });
@@ -33,7 +34,16 @@ Route::get('/home','HomeController@index')->name('homeLog');
 Route::get('/faqs', 'FaqsController@index');
 
 
-Route::get('/miPerfil','UserController@index')->name('miPerfil');
+Route::prefix('/user')->group(function(){
+	Route::get('/', 'UserController@index')->name('profile');
+	Route::get('/edit', 'UserController@edit')->middleware('auth')->name('user.edit');;
+	Route::post('/update', 'UserController@update')->middleware('auth')->name('user.update');;
+	Route::get('/delete', 'UserController@destroy')->middleware('auth');
+	//Route::get('/remeras', 'UserController@index');
+	Route::get('/example', 'UserController@show');
+
+});
+
 
 
 Auth::routes();
