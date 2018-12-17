@@ -71,7 +71,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="dni" class="col-form-label text-md-right">Numero de DNI:</label>
+                            <label for="dni" class="col-form-label text-md-right">Número de DNI:</label>
                                 <input id="dni" type="dni" class="form-control{{ $errors->has('dni') ? ' is-invalid' : '' }}" name="dni" value="{{ old('dni', $user->dni) }}" >
                                 @if ($errors->has('dni'))
                                     <span class="invalid-feedback" role="alert">

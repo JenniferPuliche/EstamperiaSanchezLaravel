@@ -31,8 +31,7 @@ class UserController extends Controller
 		//Valido nuevos datos
 		$this->validate($request, [
 		  'name' => 'required|string|max:255',
-		  //'email' =>'nullable|integer|min:0',
-		  'dni' =>'nullable|integer|min:0|max:99999999',
+		  'dni' =>'nullable|numeric|min:1000000|max:99999999',
 		  'tel' =>'nullable|regex:/(01)[0-9]{9}/',
 		  'sexo' =>'nullable|string|max:20',
 		  'avatar'=> 'nullable|image',
@@ -54,6 +53,7 @@ class UserController extends Controller
           'sexo' => $request->input('sexo'),
           'avatar' => $path??null,
       ]);
+      //dd($user);
       // $product->name = $request->input('name')??0;
       // $product->image = $request->input('name')??0;
       // $product->wholesale_price = $request->input('whole_price')??0;
