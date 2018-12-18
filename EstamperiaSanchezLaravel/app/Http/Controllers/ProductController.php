@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use DB;
 use App\Product;
 use App\Category;
 use Illuminate\Http\Request;
@@ -17,10 +18,18 @@ class ProductController extends Controller
     {
         /* Clase alta baja */
         $products = Product::paginate(8);//paginate(5); // traigo todos los productos
-        $categories = Category::all(); // traigo las categorías 
+        $categories = Category::all(); // traigo las categorías
         //products.index
         //compact(['products', 'categories']));
         return view ('product.remeras', compact(['products', 'categories']));
+    }
+    public function category($id)
+    {
+      $categories = Category::all();
+      $category = Category::find($id);
+      $products = Product::where('category_id', $id)->paginate(4);
+
+      return view('product.category', compact(['products', 'categories','category']));
     }
 
     /**
@@ -69,7 +78,7 @@ class ProductController extends Controller
         //OPCIÓN ATTACH (de uno a uno)
         foreach ($request->input('categories') as $category) {
             $product->categories()->attach($category);
-        } 
+        }
 
         //OPCION ARRAY (de a muchos, sincroniza de a muchos)
         # @TODO
@@ -85,10 +94,16 @@ class ProductController extends Controller
      * @param  \App\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function show(Product $product)
+    public function show($id)
     {
-        return view('product.example');
+        $product = Product::find($id);
+        //dd($product->image);
+        return view('product.single')->with('product', $product);
     }
+    // public function show2()
+    // {
+    //     return view('product.example');
+    // }
 
     /**
      * Show the form for editing the specified resource.
@@ -145,7 +160,7 @@ class ProductController extends Controller
 
       foreach ($request->input('categories') as $category) {
           $product->categories()->attach($category);
-      } 
+      }
       return redirect('/product');
     }
 

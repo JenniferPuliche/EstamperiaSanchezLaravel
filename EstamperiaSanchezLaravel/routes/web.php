@@ -13,14 +13,15 @@
 
 Route::prefix('/product')->group(function(){
 	Route::get('/', 'ProductController@index');
+	Route::get('/category/{id}', 'ProductController@category')->middleware('auth');
 	Route::get('/create', 'ProductController@create')->middleware('auth');
 	Route::post('/create', 'ProductController@store')->middleware('auth');
-	//OK
+	Route::get('/show/{id}', 'ProductController@show')->middleware('auth');
 	Route::get('/edit/{id}', 'ProductController@edit')->middleware('auth');
 	Route::post('/update/{id}', 'ProductController@update')->middleware('auth');
 	Route::get('/delete/{id}', 'ProductController@destroy')->middleware('auth');
 	//Route::get('/remeras', 'ProductController@index');
-	Route::get('/example', 'ProductController@show');
+	Route::get('/example', 'ProductController@show2');
 
 });
 

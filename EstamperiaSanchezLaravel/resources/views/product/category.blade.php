@@ -13,12 +13,12 @@
 @section('main')
 
 <div class="botones">
-	<h3>Remeras</h3>
+	<h3>{{$category->name}}</h3>
 </div>
 
 	<div class="dorm-goup justify-content-center" style="display:flex">
 		@foreach ($categories as $category)
-			<a class="btn btn-light" href="/product/category/{{$category->id}}" >{{$category->name}}</a>
+			<a class="btn btn-light" href="/product/category/{{$category->id}}">{{$category->name}}</a>
 		@endforeach
 
 	</div>

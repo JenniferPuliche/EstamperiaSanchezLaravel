@@ -20,6 +20,13 @@ class CreamosOpcionAdmin extends Migration
           $table->string('avatar')->nullable()->default('avatarDefault.png');
           $table->string('sexo')->nullable();
         });
+
+        // \DB::table('users')->insert([
+        //   [ 'name'=>'admin'],
+        //   [ 'email'=>'admin@admin.com'],
+        //   [ 'password'=>'1234567890'],
+        //   [ 'admin'=>'0'],
+        // ]);
     }
 
     /**
