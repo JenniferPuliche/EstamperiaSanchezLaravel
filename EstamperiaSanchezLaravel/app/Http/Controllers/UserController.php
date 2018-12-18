@@ -11,7 +11,7 @@ class UserController extends Controller
 	public function index()
 	{
 		$user = \Auth::user();
-		return view('pages.miPerfil', compact('user'));
+		return view('user.profile', compact('user'));
 	}
 
 	public function edit()

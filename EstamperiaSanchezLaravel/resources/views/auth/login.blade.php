@@ -90,7 +90,7 @@
               </div>
             </div>
 </div>
-<script src="/loginValidate.js"></script>
+<script src="/js/loginValidate.js"></script>
 @endsection
 
 @section('footer')
