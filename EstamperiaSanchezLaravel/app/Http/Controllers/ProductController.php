@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Product;
+use App\Category;
 use Illuminate\Http\Request;
 #@TODO agregar validación al form product.create
 class ProductController extends Controller
@@ -16,10 +17,10 @@ class ProductController extends Controller
     {
         /* Clase alta baja */
         $products = Product::paginate(8);//paginate(5); // traigo todos los productos
-        //$categories = Category::all(); // traigo las categorías (M-V-JUV)
+        $categories = Category::all(); // traigo las categorías 
         //products.index
         //compact(['products', 'categories']));
-        return view ('product.remeras', compact('products'));
+        return view ('product.remeras', compact(['products', 'categories']));
     }
 
     /**
@@ -29,8 +30,8 @@ class ProductController extends Controller
      */
     public function create()
     {
-        //$categories = Category::all();
-        return view('product.create');//->with('categories', $categories);
+        $categories = Category::all();
+        return view('product.create')->with('categories', $categories);
     }
 
     /**
@@ -45,14 +46,8 @@ class ProductController extends Controller
             'name' => 'required',
             'image'=> 'nullable|image',
             'wholesale_price' =>'nullable|integer|min:0',
-            'retail_price' =>'nullable|integer|min:0'
-        /*
-        $table->string('name', 180);
-        $table->integer('wholesale_price')->nullable();
-        $table->integer('retail_price')->nullable();
-        $table->string('image', 500);
-        $table->string('color', 255);
-        */
+            'retail_price' =>'nullable|integer|min:0',
+            'categories' => 'required|min:1',
         ]);
 
         //dd($request->all());
@@ -72,9 +67,9 @@ class ProductController extends Controller
         ]);
         // Relaciono el ID con la categoria ID
         //OPCIÓN ATTACH (de uno a uno)
-        /*foreach ($request->input('categories') as $category) {
+        foreach ($request->input('categories') as $category) {
             $product->categories()->attach($category);
-        } */
+        } 
 
         //OPCION ARRAY (de a muchos, sincroniza de a muchos)
         # @TODO
@@ -128,8 +123,9 @@ class ProductController extends Controller
       $this->validate($request, [
           'name' => 'required',
           'image'=> 'nullable|image',
-          'wholesale_price' =>'nullable|integer|min:0',
-          'retail_price' =>'nullable|integer|min:0'
+          'wholesale_price' =>'nullable|integer|min:0|max:1000',
+          'retail_price' =>'nullable|integer|min:0|max:1000',
+          'categories' => 'required|min:1',
       ]);
       //Redefino el path nuevo de imagen
       if($request->file('image')){
@@ -147,12 +143,9 @@ class ProductController extends Controller
           'image' => $path??null,
       ]);
 
-      // $product->name = $request->input('name')??0;
-      // $product->image = $request->input('name')??0;
-      // $product->wholesale_price = $request->input('whole_price')??0;
-      // $product->retail_price = $request->input('retail_price')??0;
-      // $product->image = $path;
-      // $product->save();
+      foreach ($request->input('categories') as $category) {
+          $product->categories()->attach($category);
+      } 
       return redirect('/product');
     }
 
@@ -164,7 +157,10 @@ class ProductController extends Controller
      */
     public function destroy($id)
     {
-        $product = Product::find($id)->delete();
+        $product = Product::find($id);
+        //elimino las relaciones
+        $product->categories()->detach();
+        $product->delete();
         return redirect('/product');
     }
 }

@@ -5,7 +5,7 @@
 @endsection
 
 @section('header')
-@include('includes.header')
+@include('includes.header2')
 @endsection
 
 @section('main')
@@ -62,6 +62,21 @@
                                     <strong>{{ $errors->first('image') }}</strong>
                                 </span>
                             @endif
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="" class="col-md-4 col-form-label text-md-right">Categorias</label>
+
+                            <div class="col-md-6">
+                                @foreach ($categories as $category)
+                                    <input id="{{$category->id}}"  type="checkbox" name="categories[]" value="{{$category->id}}">
+                                    <label for="{{$category->id}}">{{$category->name}}</label>
+                                @endforeach
+
+                                @if ($errors->has('categories'))
+                                        <strong>{{ $errors->first('categories') }}</strong>
+                                @endif
+                            </div>
                         </div>
 
                         <div class="form-group row mb-0">

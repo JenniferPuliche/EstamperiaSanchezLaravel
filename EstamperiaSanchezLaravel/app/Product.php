@@ -6,9 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
-	protected $guarded = [];
-	public function category(){
-		return $this->belongsTo(Category::class);
+	protected $guarded = ['update_at', 'created_at','remember_token'];
+	
+	public function categories(){
+		return $this->belongsToMany(Category::class);
 		//@TODO chequear si guarda relación
 	}
     //
