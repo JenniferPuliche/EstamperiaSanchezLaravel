@@ -44,6 +44,10 @@ Route::prefix('/user')->group(function(){
 
 });
 
+Route::get('/buscador','BuscadorController@show');
+
+Route::get('/busqueda/{busqueda}','BuscadorController@search');
+
 
 
 Auth::routes();

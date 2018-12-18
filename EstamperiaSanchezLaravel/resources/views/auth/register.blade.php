@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
 @section('title')
-  <title> Registro - Estamperia Sanchez</title>
+  <title> Registrate</title>
 
 @section('links')
   <link rel="stylesheet" type="text/css" href="resources/css/registro.css">
