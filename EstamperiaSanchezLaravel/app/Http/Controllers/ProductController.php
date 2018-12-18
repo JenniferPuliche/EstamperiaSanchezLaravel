@@ -21,7 +21,7 @@ class ProductController extends Controller
         $categories = Category::all(); // traigo las categorías
         //products.index
         //compact(['products', 'categories']));
-        return view ('product.remeras', compact(['products', 'categories']));
+        return view ('product.index', compact(['products', 'categories']));
     }
     public function category($id)
     {

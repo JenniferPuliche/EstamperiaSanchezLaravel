@@ -13,7 +13,7 @@
 @section('main')
 
 <div class="botones">
-	<h3>Remeras</h3>
+	<h3>Todos los productos</h3>
 </div>
 
 	<div class="dorm-goup justify-content-center" style="display:flex">

@@ -12,7 +12,7 @@
 */
 
 Route::prefix('/product')->group(function(){
-	Route::get('/', 'ProductController@index');
+	Route::get('/', 'ProductController@index')->middleware('auth')->name('product.index');
 	Route::get('/category/{id}', 'ProductController@category')->middleware('auth');
 	Route::get('/create', 'ProductController@create')->middleware('auth');
 	Route::post('/create', 'ProductController@store')->middleware('auth');
