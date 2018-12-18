@@ -132,7 +132,7 @@
         </div>
     </div>
 </div>
-<script src="/registerValidate.js"></script>
+<script src="/js/registerValidate.js"></script>
 @endsection
 
 @section('footer')
