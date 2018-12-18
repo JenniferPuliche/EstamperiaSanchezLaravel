@@ -15,6 +15,9 @@ class AdminProfile
      */
     public function handle($request, Closure $next)
     {
+      if(\Auth::user()->name == 'admin'){
         return $next($request);
+      }
+      return redirect('/')
     }
 }
