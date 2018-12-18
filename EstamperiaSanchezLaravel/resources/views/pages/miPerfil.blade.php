@@ -2,7 +2,7 @@
 @extends('layouts.app')
 
 @section('title')
-<title>Home</title>
+<title>Mi perfil</title>
 @endsection
 
 @section('header')
