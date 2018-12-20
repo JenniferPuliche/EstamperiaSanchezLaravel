@@ -68,18 +68,19 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="" class="col-form-label text-md-right">Categorias: </label>
+                            <label for="category" class="col-form-label text-md-right">Categorias: </label>
 
-                            <div class="col-md-12">
+                            <div class="category col-md-12">
                                 @foreach ($categories as $category)
                                     <input id="{{$category->id}}" class="" type="radio" name="categories[]" value="{{$category->id}}">
                                     <label for="{{$category->id}}">{{$category->name}}</label>
                                 @endforeach
 
                                 @if ($errors->has('categories'))
+                                    <span name="cat" class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('categories') }}</strong>
+                                    </span>
                                 @endif
-                                <div class="invalid-feedback"></div>
                             </div>
                         </div>
 
