@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Middleware\AdminProfile;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,12 +16,12 @@
 Route::prefix('/product')->group(function(){
 	Route::get('/', 'ProductController@index')->middleware('auth')->name('product.index');
 	Route::get('/category/{id}', 'ProductController@category');
-	Route::get('/create', 'ProductController@create');
-	Route::post('/create', 'ProductController@store');
+	Route::get('/create', 'ProductController@create')->middleware('auth')->middleware(AdminProfile::class);
+	Route::post('/create', 'ProductController@store')->middleware('auth')->middleware(AdminProfile::class);
 	Route::get('/show/{id}', 'ProductController@show')->middleware('auth');
-	Route::get('/edit/{id}', 'ProductController@edit')->middleware('auth');
-	Route::post('/update/{id}', 'ProductController@update')->middleware('auth');
-	Route::get('/delete/{id}', 'ProductController@destroy')->middleware('auth');
+	Route::get('/edit/{id}', 'ProductController@edit')->middleware('auth')->middleware(AdminProfile::class);
+	Route::post('/update/{id}', 'ProductController@update')->middleware('auth')->middleware(AdminProfile::class);
+	Route::get('/delete/{id}', 'ProductController@destroy')->middleware('auth')->middleware(AdminProfile::class);
 	//Route::get('/remeras', 'ProductController@index');
 	Route::get('/example', 'ProductController@show2');
 

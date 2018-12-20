@@ -24,6 +24,7 @@
 	</div>
 
 <section>
+
 	<div class="remeras">
 		@forelse ($products as $product)
 			{{--EMPIEZA CADA PRODUCTO--}}
@@ -32,8 +33,11 @@
 					<img src="{{ $product->image }}" alt="calse remera {{ $product->id }}" class="imgreme">
 					<h5 class="nombreRemera">{{ $product->name }}</h5>
 				</a>
-				<a href="/product/edit/{{$product->id}}"> Editar </a>
-				<a href="/product/delete/{{$product->id}}"> Eliminar</a>
+
+				@if(\Auth::user()->admin == '1')
+					<a href="/product/edit/{{$product->id}}"> Editar </a>
+					<a href="/product/delete/{{$product->id}}"> Eliminar</a>
+				@endif
 			</div>
 			{{--TERMINA CADA PRODUCTO--}}
 		@empty

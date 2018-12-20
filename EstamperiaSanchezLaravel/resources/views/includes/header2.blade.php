@@ -35,10 +35,11 @@
 
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
 
-
+                @if(\Auth::user()->admin == '1')
                 <a  class="dropdown-item" style="font-size:15px" href="/product/create">
                     Agregar Producto
                 </a>
+                @endif
 
                 <a  class="dropdown-item" style="font-size:15px" href="{{ route('profile') }}">
                     Mi Perfil
