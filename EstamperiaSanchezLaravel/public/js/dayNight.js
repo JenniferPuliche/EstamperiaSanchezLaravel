@@ -3,11 +3,11 @@ $(document).ready(function(){
       // console.log(localStorage.getItem('mode'))
 
       if(localStorage.getItem("mode")=="light"){
-        $('#ccs_body')[0].href='css/body.css';
+        $('#ccs_body')[0].href='/css/body.css';
         // $('#navBar').toggleClass('bg-light')
 
       }else{
-        $('#ccs_body')[0].href='css/dark.css';
+        $('#ccs_body')[0].href='/css/dark.css';
         // $('#navBar').toggleClass('bg-dark')
         $('.toggle').toggleClass('active');
       }
@@ -27,11 +27,11 @@ $(document).ready(function(){
         $('.toggle').click(function(){
           //console.log($('#ccs_body')[0])
           if(localStorage.getItem("mode")=="dark"){
-            $('#ccs_body')[0].href='css/body.css';
+            $('#ccs_body')[0].href='/css/body.css';
             // $('#navBar').toggleClass('bg-light')
             localStorage.setItem("mode", "light");
           }else{
-            $('#ccs_body')[0].href='css/dark.css';
+            $('#ccs_body')[0].href='/css/dark.css';
             // $('#navBar').toggleClass('bg-dark')
             localStorage.setItem("mode", "dark");
           }

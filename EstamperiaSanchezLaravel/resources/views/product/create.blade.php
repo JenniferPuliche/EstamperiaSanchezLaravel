@@ -81,9 +81,9 @@
                                         <strong>{{ $errors->first('categories') }}</strong>
                                     </span>
                                 @endif
-                                <span name="cat" class="invalid-feedback" role="alert">
-                                    <strong></strong>
-                                </span>
+                                <div name="errorJS" class="invalid-feedback" role="alert">
+                                    <strong>Hola</strong>
+                                </div>
                             </div>
                         </div>
 

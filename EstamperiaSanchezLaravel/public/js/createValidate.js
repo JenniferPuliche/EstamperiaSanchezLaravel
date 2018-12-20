@@ -31,11 +31,3 @@ Minorista.onblur = function (){
       this.parentNode.querySelector('.invalid-feedback').innerText='Ingrese un precio válido';
     }
   }
-
-
-
-
-
-
-
-
