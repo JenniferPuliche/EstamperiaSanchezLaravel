@@ -73,7 +73,7 @@
 
                         <div class="form-group row">
                             <label for="tel" class="col-form-label text-md-right">Numero de teléfono:</label>
-                                <input id="tel" type="tel" class="form-control{{ $errors->has('tel') ? ' is-invalid' : '' }}" name="tel" value="{{ old('tel') }}" >
+                                <input id="tel" type="tel" class="form-control{{ $errors->has('tel') ? ' is-invalid' : '' }}" name="userPhone" value="{{ old('tel') }}" >
                                 @if ($errors->has('tel'))
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('tel') }}</strong>
