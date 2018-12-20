@@ -18,7 +18,7 @@
 
 			<!-- ACA VA CAROUSEL CON ZOOM PARA VARIABLES DE PRODUCTO -->
 
-			<img  class="img-producto" src="/{{ $product->image }}" alt="{{$product->name}}" width="100%">
+			<img  class="img-producto" src="/storage/{{ $product->image }}" alt="{{$product->name}}" width="100%">
 		</div>
 
 		<sidebar class="col-sm-4  cont-descripcion" >
