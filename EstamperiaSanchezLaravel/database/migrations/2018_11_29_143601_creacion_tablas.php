@@ -13,16 +13,39 @@ class CreacionTablas extends Migration
      */
     public function up()
     {
+      Schema::create('categories', function (Blueprint $table) {
+        $table->increments('id');
+        $table->string('name', 180);
+        $table->timestamps();
+      });
+
+      \DB::table('categories')->insert([
+        [ 'name'=>'Remeras'],
+        [ 'name'=>'Gorras'],
+        [ 'name'=>'Camperas'],
+      ]);
+
       Schema::create('products', function (Blueprint $table) {
-          $table->increments('id')->unique();
-          $table->string('name', 180);
-          $table->string('category', 255)->nullable();
-          $table->integer('wholesale_price')->nullable();
-          $table->integer('retail_price')->nullable();
-          $table->string('image', 500)->nullable();
-          $table->string('color', 255)->nullable();
-          $table->rememberToken();
-          $table->timestamps();
+        $table->increments('id');
+        $table->string('name', 180);
+        $table->unsignedInteger('category_id')->nullable();
+        $table->integer('wholesale_price')->nullable();
+        $table->integer('retail_price')->nullable();
+        $table->string('image', 500)->nullable();
+        $table->string('description', 500)->nullable();
+        $table->string('color', 255)->nullable();
+        $table->rememberToken();
+        $table->timestamps();
+      });
+
+      Schema::create('category_product', function (Blueprint $table) {
+        $table->increments('id');
+        $table->timestamps();
+        $table->unsignedInteger('category_id');
+        $table->unsignedInteger('product_id');
+
+        $table->foreign('category_id')->references('id')->on('categories');
+        $table->foreign('product_id')->references('id')->on('products');
       });
   }
 
@@ -33,6 +56,8 @@ class CreacionTablas extends Migration
      */
      public function down()
      {
-         Schema::dropIfExists('products');
+        Schema::dropIfExists('category_product');
+        Schema::dropIfExists('categories');
+        Schema::dropIfExists('products');
      }
  }

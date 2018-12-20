@@ -12,7 +12,7 @@
             <li class="navbar-brand dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">PRODUCTOS</a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="/product/remeras">Remeras</a>
+                <a class="dropdown-item" href="/product">Remeras</a>
                 <a class="dropdown-item" href="/product/example">Camperas</a>
                 <a class="dropdown-item" href="/product/example">Pantalones</a>
             </div>
@@ -69,10 +69,11 @@
 
       <div class="">
         <form class="form-inline my-2 my-lg-0 mr-auto ml-auto">
-          <input id="buscarInput"  class="form-control mr-sm-2" type="Buscar" placeholder="Buscar..." aria-label="Buscar">
+          <input id="buscarInput" name="buscar" class="form-control mr-sm-2" type="Buscar" placeholder="Buscar..." aria-label="Buscar">
           <button class="btn btn-danger mr-auto ml-auto" style="color:red" type="submit">Buscar</button>
         </form>
       </div>
+
       <!-- <div class="toggle"></div> -->
 
       </div>

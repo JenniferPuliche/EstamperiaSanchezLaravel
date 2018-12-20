@@ -7,24 +7,24 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto ml-auto">
           <li class="navbar-brand">
-            <a id="navA" class="nav-link" href="/faqs">¿PREGUNTAS?</a>
+            <a class="nav-link" href="/faqs">¿PREGUNTAS?</a>
           </li>
           <li class="navbar-brand dropdown">
-            <a id="navA" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">PRODUCTOS</a>
-      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a id="navA" class="dropdown-item" href="/product/remeras">Remeras</a>
-              <a id="navA" class="dropdown-item" href="/product/example">Camperas</a>
-              <a id="navA" class="dropdown-item" href="/product/example">Pantalones</a>
-          </div>
+            <a class="nav-link" href="{{ route('product.index') }}" id="navbarDropdownMenuLink" role="button" >PRODUCTOS</a>
+      {{-- <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a  class="dropdown-item" href="/product">Remeras</a>
+              <a  class="dropdown-item" href="/product/example">Camperas</a>
+              <a  class="dropdown-item" href="/product/example">Pantalones</a>
+          </div> --}}
         </li>
 
       @guest
           <li class="navbar-brand">
-              <a id="navA" class="nav-link" style="font-size:20px" href="{{ route('login') }}">INGRESA</a>
+              <a  class="nav-link" style="font-size:20px" href="{{ route('login') }}">INGRESA</a>
           </li>
           <li class="navbar-brand">
               @if (Route::has('register'))
-                  <a id="navA" class="nav-link" style="font-size:20px" href="{{ route('register') }}">REGISTRATE</a>
+                  <a  class="nav-link" style="font-size:20px" href="{{ route('register') }}">REGISTRATE</a>
               @endif
           </li>
       @else
@@ -35,16 +35,17 @@
 
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
 
-
-                <a id="navA" class="dropdown-item" style="font-size:15px" href="product/create">
+                @if(\Auth::user()->admin == '1')
+                <a  class="dropdown-item" style="font-size:15px" href="/product/create">
                     Agregar Producto
                 </a>
+                @endif
 
-                <a id="navA" class="dropdown-item" style="font-size:15px" href="/miPerfil">
+                <a  class="dropdown-item" style="font-size:15px" href="{{ route('profile') }}">
                     Mi Perfil
                 </a>
 
-                <a id="navA" class="dropdown-item" style="font-size:15px" href="{{ route('logout') }}"
+                <a  class="dropdown-item" style="font-size:15px" href="{{ route('logout') }}"
                      onclick="event.preventDefault();
                                    document.getElementById('logout-form').submit();">
                       Salir
@@ -68,7 +69,7 @@
     </ul>
       <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button id="navA" class="btn btn-danger my-2 my-sm-0" type="submit">Search</button>
+        <button  class="btn btn-danger my-2 my-sm-0" type="submit">Search</button>
       </form>
     </div>
   </nav>
