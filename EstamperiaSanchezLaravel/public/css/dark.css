@@ -3,6 +3,9 @@ body{
   font-family: 'Roboto', sans-serif;
   background: #232323;
 }
+#hamburguerIcon{
+  border-color: white;
+}
 #navBar{
   background-color: black;
 }

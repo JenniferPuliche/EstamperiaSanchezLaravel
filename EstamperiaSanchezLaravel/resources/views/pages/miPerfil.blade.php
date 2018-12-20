@@ -2,7 +2,7 @@
 @extends('layouts.app')
 
 @section('title')
-<title>Home</title>
+<title>Mi Perfil</title>
 @endsection
 
 @section('header')
@@ -25,7 +25,6 @@
 
 
 							<section class="categorias">
-
 							<div id="galeria" style="display:flex">
 								<div class="userDates">
 									<ul>
@@ -43,11 +42,7 @@
 								<div class="categ">
 									<img class="miAvatar" src="imagenes/avatars/{{ Auth::user()->avatar }}"  alt="miAvatar">
 								</div>
-
-
-
 							</div>
-
 						</section>
 					</div>
 				</div>
