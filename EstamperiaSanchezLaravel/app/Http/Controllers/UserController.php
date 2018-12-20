@@ -42,10 +42,11 @@ class UserController extends Controller
           //Borramos la imagen vieja
           \Storage::delete($path);
           //Guardamos la nueva iamgen
-          $path = $request->file('avatar')->storePubliclyAs('public/user/avatar', $nombreArchivo);
+          $path = $request->file('avatar')->storePubliclyAs('users/avatars/', $nombreArchivo, 'public');
       }
       //dd($request->input('dni'));
       //Actualizo la información
+			//"public/user/avatar/admin.png"
       $user->update([
           'name' => $request->input('name'),
           'dni' => $request->input('dni'),

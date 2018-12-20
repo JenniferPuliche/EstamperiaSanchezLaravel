@@ -56,7 +56,7 @@
                         </div>
 
                         <div class="col-md-6">
-                            <input id="image" type="file" class=""{{ $errors->has('image') ? ' is-invalid' : '' }}" name="image" >
+                            <input id="image" type="file" class=""{{ $errors->has('image') ? ' is-invalid' : '' }} name="image" >
                             @if ($errors->has('image'))
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $errors->first('image') }}</strong>

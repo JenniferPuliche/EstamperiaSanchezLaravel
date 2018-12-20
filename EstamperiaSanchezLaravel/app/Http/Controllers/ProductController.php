@@ -63,7 +63,8 @@ class ProductController extends Controller
         //consulto si hay imagen y la guardo
         if($request->file('image')){
             $nombreArchivo= $request->input('name').'.'.$request->file('image')->extension();
-            $path = $request->file('image')->storePubliclyAs('public/products', $nombreArchivo);
+            $path = $request->file('image')->storePubliclyAs('products/', $nombreArchivo, 'public');
+            //dd($path);
         }
         // Creo el objeto proudcto y lo guardo en la DB
 
@@ -149,7 +150,7 @@ class ProductController extends Controller
           //Borramos la imagen vieja
           \Storage::delete($path);
           //Guardamos la nueva iamgen
-          $path = $request->file('image')->storePubliclyAs('public/products', $nombreArchivo);
+          $path = $request->file('image')->storePubliclyAs('products', $nombreArchivo, 'public');
       }
       //Actualizo la información
       $product->update([

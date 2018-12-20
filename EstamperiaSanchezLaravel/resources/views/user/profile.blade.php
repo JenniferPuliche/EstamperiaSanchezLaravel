@@ -38,7 +38,7 @@
                         	</div>
 						</div>
 						<div class="categ">
-							<img class="miAvatar" src="imagenes/avatars/{{ $user->avatar }}"  alt="miAvatar">
+							<img class="miAvatar" src="/storage/{{ $user->avatar }}"  alt="miAvatar">
 						</div>
 					</div>
 				</section>

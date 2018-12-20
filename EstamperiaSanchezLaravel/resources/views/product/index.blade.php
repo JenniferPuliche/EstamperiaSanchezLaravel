@@ -29,7 +29,7 @@
 			{{--EMPIEZA CADA PRODUCTO--}}
 			<div class="remera" id="hombre">
 				<a href="/product/show/{{$product->id}}">
-					<img src="{{ $product->image }}" alt="calse remera {{ $product->id }}" class="imgreme">
+					<img src="/storage/{{ $product->image }}" alt="calse remera {{ $product->id }}" class="imgreme">
 					<h5 class="nombreRemera">{{ $product->name }}</h5>
 				</a>
 				@if(\Auth::user()!=NULL && \Auth::user()->admin == '1')

@@ -29,13 +29,6 @@
                 <div class="card-body">
                     <form method="POST" action="{{ route('user.update') }}" class="contact-form" enctype="multipart/form-data">
                         @csrf
-
-                        <!-- <div class="form-group">
-                          <label for="fullName">Nombre completo:</label>
-                          <input type="text" name="name" id="fullName" class="form-control" value=<?php echo $_POST['name']??'';?>>
-                          <div class="invalid-feedback">ldflskflk</div>
-                        </div> -->
-
                         <div class="form-group row">
                             <label for="name" class="col-form-label text-md-right">Nombre completo:</label>
                               <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name', $user->name) }}"  autofocus>
