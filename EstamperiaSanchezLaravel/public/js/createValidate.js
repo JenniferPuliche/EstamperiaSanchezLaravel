@@ -11,14 +11,14 @@ Name.onblur = function (){
   }
 
 Mayorista.onblur = function (){
-    if (Mayorista.value == "") {
+    if (Mayorista.value == "" || Number(Mayorista.value) < 0 ) {
       this.classList.add("is-invalid")
       this.parentNode.querySelector('.invalid-feedback').innerText='Ingrese un precio válido';
     }
   }
 
 Minorista.onblur = function (){
-    if (Minorista.value == "") {
+    if (Minorista.value == ""|| Number(Minorista.value) < 0) {
       this.classList.add("is-invalid")
       this.parentNode.querySelector('.invalid-feedback').innerText='Ingrese un precio válido';
     }

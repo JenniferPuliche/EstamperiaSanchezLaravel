@@ -36,7 +36,7 @@
 
                         <div class="form-group row">
                             <label for="wholesale_price" class=" col-form-label text-md-right">Precio mayorista: </label>
-                                <input id="wholesale_price" type="number" class="form-control{{ $errors->has('wholesale_price') ? ' is-invalid' : '' }}" name="wholesale_price" value="{{ old('wholesale_price') }}" required autofocus>
+                                <input id="wholesale_price" type="number" min="1"class="form-control{{ $errors->has('wholesale_price') ? ' is-invalid' : '' }}" name="wholesale_price" value="{{ old('wholesale_price') }}" required autofocus>
 
                                 @if ($errors->has('wholesale_price'))
                                     <span class="invalid-feedback" role="alert">
@@ -48,7 +48,7 @@
 
                         <div class="form-group row">
                             <label for="retail_price" class="col-form-label text-md-right">Precio minorista: </label>
-                                <input id="retail_price" type="number" class="form-control{{ $errors->has('retail_price') ? ' is-invalid' : '' }}" name="retail_price" value="{{ old('retail_price') }}" required autofocus>
+                                <input id="retail_price" type="number" min="1"  class="form-control{{ $errors->has('retail_price') ? ' is-invalid' : '' }}" name="retail_price" value="{{ old('retail_price') }}" required autofocus>
 
                                 @if ($errors->has('retail_price'))
                                     <span class="invalid-feedback" role="alert">
