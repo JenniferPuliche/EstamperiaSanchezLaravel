@@ -7,7 +7,7 @@ window.addEventListener('load', function(){
   var inputName = document.querySelector('input[name="name"]');
   var inputEmail = document.querySelector('input[name="email"]');
   var emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-  var inputPhone = document.querySelector('input[name="userPhone"]');
+  var inputPhone = document.querySelector('input[name="tel"]');
   var phoneRegex = /^[0-9\-\+]{9,15}$/;
   var inputPass = document.querySelector('input[name="password"]');
   var passRegex = /^(?=.*\d).{4,20}$/;
@@ -75,11 +75,11 @@ window.addEventListener('load', function(){
             return response.json();
         })
         .then(function(data){
-            for (pais of data) { 
+            for (pais of data) {
               paises.innerHTML += '<option value="'+pais.name+'">'+pais.name+'</option>';
             }
 
-            
+
         })
 
   paises.onchange = function(){
@@ -94,7 +94,7 @@ window.addEventListener('load', function(){
           return response.json();
       })
       .then(function(data){
-          for (provincia of data) { 
+          for (provincia of data) {
             provincias.innerHTML += '<option value="'+provincia.state+'">'+provincia.state+'</option>';
 
           }
@@ -103,15 +103,6 @@ window.addEventListener('load', function(){
 
     }
   }
-  
+
 
       })
-
-
-    
-
-
-
-
-    
- 
