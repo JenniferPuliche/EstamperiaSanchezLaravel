@@ -22,6 +22,9 @@ window.addEventListener('load', function(){
       this.parentNode.querySelector('.invalid-feedback').innerText = 'Ingrese un nombre válido';
       // errorEmail.appendChild(text);
       // inputEmail.parentElement.innerText(errorEmail);
+    }else{
+      this.classList.remove("is-invalid");
+
     }
   }
 
@@ -32,28 +35,35 @@ window.addEventListener('load', function(){
       this.parentNode.querySelector('.invalid-feedback').innerText = 'Ingrese un Email válido';
       // errorEmail.appendChild(text);
       // inputEmail.parentElement.innerText(errorEmail);
+    }else{
+      this.classList.remove("is-invalid");
+
     }
   }
 
-  inputPhone.onblur = function (){
-    // console.log(inputPhone.value)
-    if (!phoneRegex.test(this.value)) {
-      // var errorPhone = document.createElement('span');
-      this.classList.add("is-invalid")
-      this.parentNode.querySelector('.invalid-feedback').innerText = 'Ingrese un teléfono válido';
-      // errorPhone.appendChild(text);
-      // inputPhone.parentElement.appendChild(errorPhone);
-    }
-  }
+  // inputPhone.onblur = function (){
+  //   // console.log(inputPhone.value)
+  //   if (inputPhone.value == "") {
+  //     // var errorPhone = document.createElement('span');
+  //     this.classList.add("is-invalid")
+  //     this.parentNode.querySelector('.invalid-feedback').innerText = 'Ingrese un teléfono válido';
+  //     // errorPhone.appendChild(text);
+  //     // inputPhone.parentElement.appendChild(errorPhone);
+  //   }else{
+  //     this.classList.remove("is-invalid");
+  //   }
+  // }
 
   inputPass.onblur = function(){
-    if (!passRegex.test(this.value)){
+    if (inputPass.value == ""){
       // var errorPassLength = document.createElement('span');
       this.classList.add("is-invalid")
       this.parentNode.querySelector('.invalid-feedback').innerText = 'Ingrese una contraseña válida';
           // errorPassLength.appendChild(text);
       // inputPass.parentElement.appendChild(errorPassLength);
       // console.log(inputPass.length)
+    }else{
+      this.classList.remove("is-invalid");
     }
   }
   inputRePass.onblur = function (){
@@ -65,6 +75,8 @@ window.addEventListener('load', function(){
       // errorRePassLength.appendChild(text);
       // inputRePass.parentElement.appendChild(errorRePassLength);
       // console.log(inputPass.length)
+    }else{
+      this.classList.remove("is-invalid");
     }
   }
 

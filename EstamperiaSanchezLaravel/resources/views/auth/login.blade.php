@@ -25,7 +25,7 @@
               <h4>Más que una estampa, tu estilo</h4>
             </div>
 
-              <div class="col-md-12 card-body">
+              <div  class="col-md-12 card-body">
                     <form method="POST" action="{{ route('login') }}" id="loginForm">
                         @csrf
 
