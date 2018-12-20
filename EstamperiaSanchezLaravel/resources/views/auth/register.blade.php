@@ -28,7 +28,7 @@
               </div>
 
                 <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}" class="contact-form">
+                    <form method="POST" style="width:98%" action="{{ route('register') }}" class="contact-form">
                         @csrf
 
                         <!-- <div class="form-group">
@@ -38,7 +38,7 @@
                         </div> -->
 
                         <div class="form-group row">
-                            <label for="name" class="col-form-label text-md-right">Nombre completo:</label>
+                            <label for="name" class="col-form-label text-md-right">Nombre completo: <span style="color:red">*</span></label>
                               <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}"  autofocus>
                               <div class="invalid-feedback"></div>
                                   @if ($errors->has('name'))
@@ -61,7 +61,7 @@
 
 
                         <div class="form-group row">
-                            <label for="email" class="col-form-label text-md-right">Correo electrónico:</label>
+                            <label for="email" class="col-form-label text-md-right">Correo electrónico: <span style="color:red">*</span></label>
                                 <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" >
                                 @if ($errors->has('email'))
                                     <span class="invalid-feedback" role="alert">
@@ -99,7 +99,7 @@
 
 
                         <div class="form-group row">
-                            <label for="password" class="col-form-label text-md-right">Contraseña:</label>
+                            <label for="password" class="col-form-label text-md-right">Contraseña: <span style="color:red">*</span></label>
                             <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" >
 
                                 @if ($errors->has('password'))
@@ -111,7 +111,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="password-confirm" class="col-form-label text-md-right">Repetir Contraseña:</label>
+                            <label for="password-confirm" class="col-form-label text-md-right">Repetir Contraseña: <span style="color:red">*</span></label>
                               <input id="password-confirm" type="password" class="form-control" name="password_confirmation" >
                               <div class="invalid-feedback"></div>
                         </div>
