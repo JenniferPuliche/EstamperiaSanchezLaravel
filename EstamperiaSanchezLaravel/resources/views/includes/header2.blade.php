@@ -7,10 +7,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto ml-auto">
           <li class="navbar-brand">
-            <a class="nav-link" href="/faqs">¿PREGUNTAS?</a>
+            <a id="navA" class="nav-link" href="/faqs">¿PREGUNTAS?</a>
           </li>
           <li class="navbar-brand dropdown">
-            <a class="nav-link" href="{{ route('product.index') }}" id="navbarDropdownMenuLink" role="button" >PRODUCTOS</a>
+            <a id="navA" class="nav-link" href="{{ route('product.index') }}" id="navbarDropdownMenuLink" role="button" >PRODUCTOS</a>
       {{-- <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <a  class="dropdown-item" href="/product">Remeras</a>
               <a  class="dropdown-item" href="/product/example">Camperas</a>
@@ -20,11 +20,11 @@
 
       @guest
           <li class="navbar-brand">
-              <a  class="nav-link" style="font-size:20px" href="{{ route('login') }}">INGRESA</a>
+              <a id="navA"  class="nav-link" style="font-size:20px" href="{{ route('login') }}">INGRESA</a>
           </li>
           <li class="navbar-brand">
               @if (Route::has('register'))
-                  <a  class="nav-link" style="font-size:20px" href="{{ route('register') }}">REGISTRATE</a>
+                  <a id="navA"  class="nav-link" style="font-size:20px" href="{{ route('register') }}">REGISTRATE</a>
               @endif
           </li>
       @else
@@ -58,7 +58,7 @@
               </div>
           </li>
           <li class="navbar-brand">
-          <a href="#"><i style="font-size:20px" class="fas fa-shopping-cart"></i> </a>
+          <a id="navA" href="#"><i style="font-size:20px" class="fas fa-shopping-cart"></i> </a>
         </li>
 
       @endguest
