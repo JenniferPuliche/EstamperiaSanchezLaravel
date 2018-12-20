@@ -33,7 +33,7 @@
 					<img src="{{ $product->image }}" alt="calse remera {{ $product->id }}" class="imgreme">
 					<h5 class="nombreRemera">{{ $product->name }}</h5>
 				</a>
-
+				
 				@if(\Auth::user()->admin == '1')
 					<a href="/product/edit/{{$product->id}}"> Editar </a>
 					<a href="/product/delete/{{$product->id}}"> Eliminar</a>

@@ -24,7 +24,7 @@ class CreamosOpcionAdmin extends Migration
         \DB::table('users')->insert([
              'name'=>'admin',
              'email'=>'admin@admin.com',
-             'password'=> bcrypt('admin'),
+             'password'=> bcrypt('bigadmin'),
              'admin'=>'1'
          ]);
 

@@ -14,7 +14,7 @@ use App\Http\Middleware\AdminProfile;
 */
 
 Route::prefix('/product')->group(function(){
-	Route::get('/', 'ProductController@index')->middleware('auth')->name('product.index');
+	Route::get('/', 'ProductController@index')->name('product.index');
 	Route::get('/category/{id}', 'ProductController@category');
 	Route::get('/create', 'ProductController@create')->middleware('auth')->middleware(AdminProfile::class);
 	Route::post('/create', 'ProductController@store')->middleware('auth')->middleware(AdminProfile::class);
