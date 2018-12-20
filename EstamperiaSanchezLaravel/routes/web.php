@@ -50,7 +50,7 @@ Route::prefix('/user')->group(function(){
 Route::get('/buscador','BuscadorController@show');
 
 Route::get('/busqueda/{busqueda}','BuscadorController@search');
-
+Route::get('password/reset', 'RegisterController@showRegistrationForm')->middleware('guest');  
 
 
 Auth::routes();

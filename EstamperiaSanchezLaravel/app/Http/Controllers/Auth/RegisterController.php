@@ -3,10 +3,14 @@
 namespace App\Http\Controllers\Auth;
 
 use App\User;
+
+use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Illuminate\Auth\Events\Registered;
 
 class RegisterController extends Controller
 {
@@ -28,7 +32,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/';
 
     /**
      * Create a new controller instance.
@@ -52,16 +56,11 @@ class RegisterController extends Controller
             'name' => ['required', 'string', 'max:255', 'min:5'],
             'dni' => ['nullable','string', 'max:13'],
             'email' => ['nullable','required', 'string', 'email', 'max:255', 'unique:users'],
-            'tel' => ['nullable','string', 'max:25'],
+            'tel' => ['nullable','numeric', 'digits:15'],
             'password' => ['required', 'string', 'min:6', 'confirmed'],
-        ],[
-          'name.required' => 'El nombre de usuario debe tener al menos 5 caracteres ',
-          'dni' => '',
-          'email' => '',
-          'tel' => '',
-          'password' => '',
         ]);
     }
+
 
     /**
      * Create a new user instance after a valid registration.
@@ -78,5 +77,17 @@ class RegisterController extends Controller
             'tel' => $data['tel'],
             'password' => Hash::make($data['password']),
         ]);
+    }
+    public function register(Request $request)
+    {
+    
+        $this->validator($request->all())->validate();
+
+        event(new Registered($user = $this->create($request->all())));
+
+        $this->guard()->login($user);
+
+        return $this->registered($request, $user)
+                        ?: redirect($this->redirectPath());
     }
 }
