@@ -19,7 +19,7 @@ class ProductController extends Controller
         /* Clase alta baja */
         $products = Product::paginate(8);//paginate(5); // traigo todos los productos
         $categories = Category::all(); // traigo las categorías
-        //products.index
+        //dd(\Auth::user());
         //compact(['products', 'categories']));
         return view ('product.index', compact(['products', 'categories']));
     }
