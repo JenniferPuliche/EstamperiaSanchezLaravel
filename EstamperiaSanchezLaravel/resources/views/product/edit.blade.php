@@ -5,7 +5,7 @@
 @endsection
 
 @section('header')
-@include('includes.header')
+@include('includes.header2')
 @endsection
 
 @section('main')
@@ -56,7 +56,7 @@
                         </div>
 
                         <div class="col-md-6">
-                            <input id="image" type="file" class="form-control{{ $errors->has('image') ? ' is-invalid' : '' }}" name="image" >
+                            <input id="image" type="file" class=""{{ $errors->has('image') ? ' is-invalid' : '' }}" name="image" >
                             @if ($errors->has('image'))
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $errors->first('image') }}</strong>
@@ -65,9 +65,9 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="" class="col-md-4 col-form-label text-md-right">Categorías</label>
+                            <label for="" class="col-form-label text-md-right">Categorías</label>
 
-                            <div class="col-md-6">
+                            <div class="col-md-12">
                                 @foreach ($categories as $category)
                                     <input id="{{$category->id}}"  type="checkbox" name="categories[]" value="{{$category->id}}">
                                     <label for="{{$category->id}}">{{$category->name}}</label>

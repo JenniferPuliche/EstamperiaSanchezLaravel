@@ -59,7 +59,7 @@
                         </div>
 
                         <div class="col-md-8">
-                            <input id="image" type="file" class="form-control{{ $errors->has('image') ? ' is-invalid' : '' }}" name="image">
+                            <input id="image" type="file" class=""{{ $errors->has('image') ? ' is-invalid' : '' }}" name="image">
                             @if ($errors->has('image'))
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $errors->first('image') }}</strong>
@@ -82,7 +82,7 @@
                                     </span>
                                 @endif
                                 <div name="errorJS" class="invalid-feedback" role="alert">
-                                    <strong>Hola</strong>
+                                    <strong></strong>
                                 </div>
                             </div>
                         </div>

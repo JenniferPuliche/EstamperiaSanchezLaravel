@@ -18,7 +18,7 @@ Route::prefix('/product')->group(function(){
 	Route::get('/category/{id}', 'ProductController@category');
 	Route::get('/create', 'ProductController@create')->middleware('auth')->middleware(AdminProfile::class);
 	Route::post('/create', 'ProductController@store')->middleware('auth')->middleware(AdminProfile::class);
-	Route::get('/show/{id}', 'ProductController@show')->middleware('auth');
+	Route::get('/show/{id}', 'ProductController@show')->middleware('auth')->middleware(AdminProfile::class);
 	Route::get('/edit/{id}', 'ProductController@edit')->middleware('auth')->middleware(AdminProfile::class);
 	Route::post('/update/{id}', 'ProductController@update')->middleware('auth')->middleware(AdminProfile::class);
 	Route::get('/delete/{id}', 'ProductController@destroy')->middleware('auth')->middleware(AdminProfile::class);

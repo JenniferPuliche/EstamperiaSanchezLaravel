@@ -4,7 +4,7 @@
   <title>Editar mi perfil</title>
 
 @section('links')
-  <link rel="stylesheet" type="text/css" href="resources/css/registro.css">
+  <link rel="stylesheet" type="text/css" href="/css/registro.css">
   <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
@@ -99,7 +99,7 @@
                         </div>
 
                         <div class="col-md-6">
-                            <input id="avatar" type="file" class="form-control{{ $errors->has('avatar') ? ' is-invalid' : '' }}" name="avatar" >
+                            <input id="avatar" type="file" class=""{{ $errors->has('avatar') ? ' is-invalid' : '' }} name="avatar" >
                             @if ($errors->has('avatar'))
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $errors->first('avatar') }}</strong>
@@ -107,7 +107,7 @@
                             @endif
                         </div>
 
-                        
+
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-danger mr-auto ml-auto">

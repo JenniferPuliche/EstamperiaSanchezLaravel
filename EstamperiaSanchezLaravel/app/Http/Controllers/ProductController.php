@@ -115,10 +115,11 @@ class ProductController extends Controller
     {
       //Busco el producto id
       $product = Product::find($id);
+      $categories = Category::all();
 
       //dd($product);
       //paso los datos al formulario
-      return view('product.edit', compact('product'));
+      return view('product.edit', compact('product', 'categories'));
     }
 
     /**
