@@ -11,6 +11,18 @@ input:hover{
   border: 2px solid rgb(199,0,0);
 } */
 
+.pagination{
+  justify-content: center;
+}
+
+.page-link{
+  color:rgb(199,0,0)!important;
+}
+
+.page-item active{
+  background-color: rgb(199,0,0)!important;
+}
+
 h3{
   text-align: center;
   color: rgb(199,0,0);
