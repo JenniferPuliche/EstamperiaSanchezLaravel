@@ -67,9 +67,10 @@
         <span class="toggle"></span>
       </li>
     </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
-        <button  class="btn btn-danger my-2 my-sm-0" type="submit">Buscar</button>
+      <form action="/search" method="POST" class="form-inline my-2 my-lg-0">
+        @csrf
+        <input class="form-control mr-sm-2" name="search" type="search" placeholder="Buscar" aria-label="Search">
+        <button class="btn btn-danger my-2 my-sm-0" type="submit">Buscar</button>
       </form>
     </div>
   </nav>

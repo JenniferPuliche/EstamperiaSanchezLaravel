@@ -44,6 +44,12 @@ return [
         'client_id' => env('GOOGLE_CLIENT_ID'),         // Your GitHub Client ID
         'client_secret' => env('GOOGLE_CLIENT_SECRET'), // Your GitHub Client Secret
         'redirect' => 'http://localhost:8000/login/google/callback',
-],
+    ],
+
+    'facebook' => [
+        'client_id' => env('FACEBOOK_CLIENT_SECRET_CLIENT_ID'),         // Your GitHub Client ID
+        'client_secret' => env('FACEBOOK_CLIENT_SECRET'), // Your GitHub Client Secret
+        'redirect' => 'http://localhost:8000/login/facebook/callback',
+    ],
 
 ];

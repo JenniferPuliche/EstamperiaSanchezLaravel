@@ -9,12 +9,12 @@
 @include('includes.header2')
 @endsection
 
-@section('listas')
+@section('main')
 
 	<form method="get" action="">
 	    @csrf
-	    <input id="buscarInput" name="buscar" class="form-control mr-sm-2" type="Buscar" placeholder="Buscar..." aria-label="Buscar">
-        <button class="btn btn-danger mr-auto ml-auto" style="color:red" type="submit">Buscar</button>
+	    <input id="buscarInput" name="buscar" class="form-control mr-sm-2" type="text" placeholder="Buscar..." aria-label="Buscar">
+        <input class="btn btn-danger mr-auto ml-auto" style="color:red" type="submit" value="Buscar"></input>
   	</form>
 	<ul id="busquedas">
 

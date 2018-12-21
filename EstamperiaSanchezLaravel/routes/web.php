@@ -47,10 +47,13 @@ Route::prefix('/user')->group(function(){
 
 });
 
-Route::get('/buscador','BuscadorController@show');
 
-Route::get('/busqueda/{busqueda}','BuscadorController@search');
-Route::get('password/reset', 'RegisterController@showRegistrationForm')->middleware('guest');  
+Route::post('/search','BuscadorController@search');
+//Route::get('/search/{busqueda}','BuscadorController@search');
+
+
+
+//Route::get('password/reset', 'RegisterController@showRegistrationForm')->middleware('guest');  
 
 
 Auth::routes();
@@ -58,3 +61,6 @@ Auth::routes();
 
 Route::get('login/google', 'Auth\LoginController@redirectToProviderGoogle');
 Route::get('login/google/callback', 'Auth\LoginController@handleProviderCallbackGoogle');
+
+Route::get('login/facebook', 'Auth\LoginController@redirectToProviderFacebook');
+Route::get('login/facebook/callback', 'Auth\LoginController@handleProviderCallbackFacebook');

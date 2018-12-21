@@ -65,9 +65,9 @@
                                         Mantener la sesión iniciada
                                     </label>
                                 </div>
-                                <a class="btn btn-link pass" href="{{ route('password.request') }}">
+                               <!-- <a class="btn btn-link pass" href="{{ route('password.request') }}">
                                     ¿Olvidaste tu contraseña?
-                                </a>
+                                </a> -->
                             </div>
                         </div>
 
@@ -76,15 +76,15 @@
                               Entrar
                           </button>
                         </div>
-                        <!-- <div class="dorm-goup justify-content-center"  style="display:flex">
+                        <div class="dorm-goup justify-content-center"  style="display:flex">
 
-                          <a class="btn btn-block-light btn-social btn-google" >
-                            <i class="fab fa-google-plus-g" style="color:red" href="/login/google"></i> <h7 class="iniciarSesionCon">Iniciar sesión con Google</h7>
+                          <a href="/login/google" class="btn btn-block-light btn-social btn-google" >
+                            <i class="fab fa-google-plus-g" style="color:red" ></i> <h7 class="iniciarSesionCon">Iniciar sesión con Google</h7>
                           </a>
-                          <a class="btn btn-block-light btn-social btn-google" >
-                            <i class="fab fa-facebook-square" href="/login/facebook"></i> <h7 class="iniciarSesionCon">Iniciar sesión con Facebook</h7>
+                          <a href="/login/facebook" class="btn btn-block-light btn-social btn-google" >
+                            <i class="fab fa-facebook-square" ></i> <h7 class="iniciarSesionCon">Iniciar sesión con Facebook</h7>
                           </a>
-                        </div> -->
+                        </div> 
                     </form>
                 </div>
               </div>
