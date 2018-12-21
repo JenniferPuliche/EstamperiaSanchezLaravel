@@ -35,6 +35,8 @@ class UserController extends Controller
 		  'tel' =>'nullable|regex:/(01)[0-9]{9}/',
 		  'sexo' =>'nullable|string|max:20',
 		  'avatar'=> 'nullable|image',
+      'pais' => 'nullable|string',
+      'provincia' => 'nullable|string',
 		]);
       //Redefino el path nuevo de imagen
       if($request->file('avatar')){
@@ -53,6 +55,8 @@ class UserController extends Controller
           'tel' => $request->input('tel'),
           'sexo' => $request->input('sexo'),
           'avatar' => $path??null,
+          'pais' => $request->input('pais'),
+          'provincia' => $request->input('provincia'),
       ]);
       //dd($user);
       // $product->name = $request->input('name')??0;

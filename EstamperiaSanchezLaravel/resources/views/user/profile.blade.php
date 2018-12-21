@@ -24,10 +24,13 @@
 					<div id="galeria" style="display:flex">
 						<div class="userDates">
 							<ul>
-								<li class="userDate">Email<span class="titleH3"> {{ $user->email }}</span></li>
+								<li class="userDate">Email: <span class="titleH3"> {{ $user->email }}</span></li>
 								<li class="userDate">DNI:<span class="titleH3"> {{ $user->dni }}</span></li>
 								<li class="userDate">Teléfono:<span class="titleH3"> {{ $user->tel }}</span></li>
 								<li class="userDate">Sexo:<span class="titleH3"> {{ $user->sexo }}</span></li>
+								<li class="userDate">Pais:<span class="titleH3"> {{ $user->pais }}</span></li>
+								<li class="userDate">Provincia:<span class="titleH3"> {{ $user->provincia }}</span></li>
+
 						</ul>
 						<div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">

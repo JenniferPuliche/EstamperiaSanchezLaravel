@@ -77,6 +77,7 @@
                             <div class="invalid-feedback"></div>
                         </div>
 
+                          <div id="paisSelected" style="display:none">{{$user->pais}}</div>
                         <div class="form-group row">
                             <label for="text" class="col-form-label text-md-right">Pais de origen:</label>
                             <select class="custom-select" id="paises" name="pais" >
@@ -84,6 +85,7 @@
                             <div class="invalid-feedback"></div>
                         </div>
 
+                        <div id="provinciaSelected" style="display:none" >{{$user->provincia}}</div>
                         <div class="form-group row" id="prov" style="display:none">
                             <label for="text" class="col-form-label text-md-right">Provincia:</label>
                             <select class="custom-select" id="provincias" name="provincia" >

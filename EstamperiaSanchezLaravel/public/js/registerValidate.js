@@ -91,7 +91,6 @@ window.addEventListener('load', function(){
               paises.innerHTML += '<option value="'+pais.name+'">'+pais.name+'</option>';
             }
 
-
         })
 
   paises.onchange = function(){

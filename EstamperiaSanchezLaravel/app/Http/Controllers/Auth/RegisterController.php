@@ -58,6 +58,8 @@ class RegisterController extends Controller
             'email' => ['nullable','required', 'string', 'email', 'max:255', 'unique:users'],
             'tel' => ['nullable','numeric', 'digits:15'],
             'password' => ['required', 'string', 'min:6', 'confirmed'],
+            'pais' => ['nullable', 'string'],
+            'provincia' => ['nullable', 'string'],
         ]);
     }
 
@@ -75,6 +77,8 @@ class RegisterController extends Controller
             'dni' => $data['dni'],
             'email' => $data['email'],
             'tel' => $data['tel'],
+            'pais' => $data['pais'],
+            'provincia' => $data['provincia'],
             'password' => Hash::make($data['password']),
         ]);
     }

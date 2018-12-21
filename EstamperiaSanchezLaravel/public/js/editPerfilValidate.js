@@ -1,4 +1,9 @@
  var paises = document.getElementById('paises');
+ var paisSelected = document.getElementById('paisSelected').innerHTML;
+ //document.getElementById('paisSelected').parentNode.removeChild('paisSelected');
+ var provinciaSelected = document.getElementById('provinciaSelected').innerHTML;
+ //document.getElementById('provinciaSelected').parentNode.removeChild('provinciaSelected');
+
 
    fetch('https://restcountries.eu/rest/v2/all')
         .then(function(response){
@@ -6,7 +11,12 @@
         })
         .then(function(data){
             for (pais of data) { 
-              paises.innerHTML += '<option value="'+pais.name+'">'+pais.name+'</option>';
+              if( ''+pais.name+'' == paisSelected ){
+                paises.innerHTML += '<option selected="selected" value="'+pais.name+'">'+pais.name+'</option>';
+              }else{
+                paises.innerHTML += '<option value="'+pais.name+'">'+pais.name+'</option>';
+              }
+              
             }
 
             
@@ -25,8 +35,11 @@
       })
       .then(function(data){
           for (provincia of data) { 
-            provincias.innerHTML += '<option value="'+provincia.state+'">'+provincia.state+'</option>';
-
+              if( ''+provincia.name+'' == provinciaSelected ){
+                provincias.innerHTML += '<option selected="selected" value="'+provincia.state+'">'+provincia.state+'</option>';
+              }else{
+                provincias.innerHTML += '<option value="'+provincia.state+'">'+provincia.state+'</option>';
+              }
           }
 
       })
