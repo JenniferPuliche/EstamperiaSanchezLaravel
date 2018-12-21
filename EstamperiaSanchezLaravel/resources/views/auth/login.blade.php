@@ -81,9 +81,9 @@
                           <a href="/login/google" class="btn btn-block-light btn-social btn-google" >
                             <i class="fab fa-google-plus-g" style="color:red" ></i> <h7 class="iniciarSesionCon">Iniciar sesión con Google</h7>
                           </a>
-                          <a href="/login/facebook" class="btn btn-block-light btn-social btn-google" >
+                          <!--<a href="/login/facebook" class="btn btn-block-light btn-social btn-google" >
                             <i class="fab fa-facebook-square" ></i> <h7 class="iniciarSesionCon">Iniciar sesión con Facebook</h7>
-                          </a>
+                          </a> -->
                         </div> 
                     </form>
                 </div>
