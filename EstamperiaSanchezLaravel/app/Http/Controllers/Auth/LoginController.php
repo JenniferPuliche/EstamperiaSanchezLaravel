@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Auth;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Validation\ValidationException;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Socialite;
 
@@ -22,6 +23,7 @@ class LoginController extends Controller
     */
 
     use AuthenticatesUsers;
+
 
     /**
      * Where to redirect users after login.
@@ -48,10 +50,6 @@ class LoginController extends Controller
         ]);
     }
 
-    protected function credentials(Request $request)
-    {
-        return $request->only($this->input('email'), 'password');
-    }
 
     public function redirectToProviderGoogle()
     {

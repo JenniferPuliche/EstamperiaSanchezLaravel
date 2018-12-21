@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'failed' => 'La contraseña o el correo son inválidos',
+    'failed' => 'La contraseña y/o el correo son inválidos',
     'throttle' => 'Demasiados intentos. Por favor intente nuevamente en :seconds segundos.',
 
 ];
