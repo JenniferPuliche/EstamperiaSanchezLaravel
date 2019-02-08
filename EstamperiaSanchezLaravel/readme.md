@@ -1,34 +1,5 @@
-TODO:
-- ABM de productos: (Belu)
+Proyecto integrador en el marco de Digital House
 
-- PaginaciOn de productos
-
--Agregar en el inicio las categorías (Nacho)
-
--Productos, que se autocomplete con el producto correspondiente
-
--"Agregar a carrito", redireccione a login.
-
-
-JAVASCRIPT
-
-Paises y provincias en el registro utilizando la api: (jenni)
-
-OPCIONALES:
-Buscador de productos:
-
-Categorizacion de productos:
-
-Generar Carrito funcional:
-
-
-
-
-TERMINADOS:
-
-
-Validacion de javascript: pasar lo que ya estaba hecho: (Lea). TERMINADO
-Alternar tema de css: (lea) TERMINADO 
 
 
 
